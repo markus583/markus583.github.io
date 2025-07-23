@@ -1,8 +1,10 @@
 ---
 layout: post
-date: 2024-10-15 15:30:00-0400
+date: 2025-05-08 15:30:00-0400
 inline: true
 related_posts: false
 ---
 
-🚀 Our EMNLP 2024 paper "Segment Any Text" is now live! Co-main contributor to wtpsplit library supporting 85+ languages. Check it out on [GitHub](https://github.com/segment-any-text/wtpsplit)! 🌍
+🌍 *wtpsplit*, the repository containing the library for our state-of-the-art text segmentation tool [Segment Any Text](https://aclanthology.org/2024.emnlp-main.665/) reached ⭐️1000 stars⭐️ on GitHub!
+
+Check it out [here](https://github.com/segment-any-text/wtpsplit)! 

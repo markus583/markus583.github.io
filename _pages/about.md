@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: NLP Researcher • AI Graduate Student • Open Source Contributor
+subtitle: NLP Researcher • AI MSc Student
 
 profile:
   align: center
-  image: prof_pic.jpg
+  image: profile_pic.jpg
   image_circular: true
 
 social: false
@@ -83,12 +83,15 @@ selected_papers: true
 
 <div class="contact-section">
   <div style="font-size: 1.1em; margin-bottom: 15px;">
-    📧 <a href="mailto:markus.frohmann@gmail.com" style="color: #007bff; text-decoration: none; font-weight: 500;">markus.frohmann@gmail.com</a>
+    <a href="mailto:markus.frohmann@gmail.com" style="color: #007bff; text-decoration: none; font-weight: 500;">markus.frohmann@gmail.com</a>
   </div>
   
   <div style="margin-bottom: 20px;">
     <a href="https://scholar.google.com/citations?user=8PxZyK8AAAAJ" target="_blank" style="margin: 0 8px; color: #4285f4; text-decoration: none; font-size: 1.3em;" title="Google Scholar">
       <i class="ai ai-google-scholar-square ai-lg"></i>
+    </a>
+    <a href="https://www.semanticscholar.org/author/Markus-Frohmann/2226600284" target="_blank" style="margin: 0 8px; color: #1857a4; text-decoration: none; font-size: 1.3em;" title="Semantic Scholar">
+      <i class="ai ai-semantic-scholar-square ai-lg"></i>
     </a>
     <a href="https://github.com/markus583" target="_blank" style="margin: 0 8px; color: #333; text-decoration: none; font-size: 1.3em;" title="GitHub">
       <i class="fab fa-github"></i>
@@ -102,48 +105,14 @@ selected_papers: true
   </div>
   
   <div style="background-color: #e8f4fd; border: 1px solid #b8daff; padding: 12px 20px; border-radius: 8px; display: inline-block;">
-    <strong style="color: #004085;">🎓 Available for PhD Opportunities</strong>
-    <div style="color: #6c757d; font-size: 0.9em; margin-top: 5px;">📍 Graz, Austria</div>
+    <strong style="color: #004085;">🎓 Seeking PhD Position for Fall 2026</strong>
   </div>
 </div>
 
-I am a Master's student in Artificial Intelligence at Johannes Kepler University Linz, specializing in **Natural Language Processing** and **multimodal AI**. Currently seeking PhD opportunities at top-tier institutions to further advance my research in computational linguistics and AI-generated content detection.
+I am a Master's student in Artificial Intelligence at **Johannes Kepler University Linz**, advised by [Prof. Markus Schedl](http://www.mschedl.eu/). Currently, my research focuses on building *modular, efficient, and personalized systems* in **Natural Language Processing** and **Multimodal AI**.
 
-My research journey has been shaped by experiences at leading institutions including **ETH Zürich** (Rycolab), **Deezer Research** in Paris, and the **Institute of Computational Perception** at JKU Linz. I have published at top-tier conferences including **ACL**, **EMNLP**, and **ISMIR**, focusing on efficient NLP methods, AI-generated content detection, and multimodal approaches.
-
-## Research Focus
-
-My research interests lie at the intersection of **natural language processing**, **multimodal AI**, and **efficient machine learning**:
-
-- **AI-Generated Content Detection**: Developing robust methods to detect synthetic lyrics and text using multimodal fusion approaches (ACL 2025, ISMIR 2025)
-- **Universal Text Processing**: Creating language-agnostic solutions for fundamental NLP tasks like sentence segmentation (EMNLP 2024)
-- **Parameter-Efficient Learning**: Designing scalable approaches for task transfer that minimize computational overhead (ACL 2024)
-- **Multimodal Understanding**: Building frameworks for any-to-any multimodal models with applications in video understanding
-
-## Academic Achievements
-
-📄 **Publications**: 6 conference papers at top-tier venues (ACL, EMNLP, ISMIR, EACL), 1 journal article, and 3 workshop papers
-
-🏆 **Awards**: Three-year Merit Scholarship recipient, multiple competition wins in music recommendation and emotion classification
-
-🔬 **Research Experience**: Internships at ETH Zürich (Rycolab) and Deezer Research, with ongoing thesis work on robust AI-generated lyrics detection
-
-💻 **Open Source**: Co-main contributor to [wtpsplit](https://github.com/segment-any-text/wtpsplit), the official implementation of our EMNLP 2024 paper supporting 85+ languages
-
-## Industry Experience
-
-Beyond academia, I bring practical machine learning expertise from roles as a **Data Scientist at Bosch** (developing production-grade predictive maintenance models and MLOps curricula) and **ML Engineer at Leftshift One** (building end-to-end ML solutions for enterprise clients).
-
-## Current Projects
-
-I'm currently completing my Master's thesis on "Robust AI-Generated Lyrics Detection" under Prof. Markus Schedl, while serving as a research intern at Deezer Research in Paris. I'm also co-supervising an M.S. thesis on chunking strategies for Retrieval-Augmented Generation (RAG) and actively reviewing for ACL Rolling Review.
-
-## Looking Forward
-
-I am passionate about developing AI systems that are not only powerful but also robust, interpretable, and efficient. My goal is to contribute to the advancement of natural language understanding while addressing critical challenges like AI-generated content detection and cross-lingual NLP applications.
-
-I'm actively seeking **PhD positions** where I can continue pushing the boundaries of NLP research while collaborating with leading researchers in the field. My experience spans both theoretical research and practical applications, positioning me to tackle complex challenges in modern AI systems.
+I have been fortunate to gain research experience at **ETH Zürich** (advised by [Mario Giulianelli](https://glnmario.github.io/) and [Ryan Cotterell](https://scholar.google.com/citations?user=DexOqtoAAAAJ&hl=en)) and **Deezer Research**, and industry experience at **Bosch** and **Leftshift One**.
 
 ---
 
-Feel free to explore my [publications](/publications/) and [CV](/cv/) to learn more about my research contributions.
+Feel free to explore my [publications](/publications/) and [CV](/cv/) to learn more about me and my research.

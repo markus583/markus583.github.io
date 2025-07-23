@@ -5,7 +5,7 @@ title: cv
 nav: true
 nav_order: 4
 cv_pdf: cv.pdf
-description: Curriculum Vitae - detailed academic and professional background.
+description:
 ---
 
 <div style="text-align: right; margin-bottom: 20px;">
