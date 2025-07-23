@@ -2,96 +2,176 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Markus Frohmann
+    - name: Location
+      value: Graz, Austria
     - name: Languages
-      value: English, German
+      value: German (Native), English (Full Professional), French (Professional), Mandarin (Elementary)
+    - name: Email
+      value: markus.frohmann@gmail.com
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Artificial Intelligence
+      institution: Johannes Kepler University Linz, Austria
+      year: Oct 2023 – Apr 2026 (expected)
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "GPA: 1.2 (Austrian scale: 1.0-5.0, equivalent to ≈3.8/4.0)"
+        - "Thesis: Robust AI-Generated Lyrics Detection (Advisor: Prof. Markus Schedl)"
+        - "Visiting Student at National Taiwan University of Science and Technology, Taiwan (Spring 2025)"
+    - title: B.S. in Artificial Intelligence, with Distinction
+      institution: Johannes Kepler University Linz, Austria
+      year: Oct 2020 – Sep 2023
       description:
-        - Description 1.
-        - Description 2.
+        - "GPA: 1.2 (equivalent to ≈3.8/4.0)"
+        - "Thesis: Simple and Efficient Task Transfer by Learning to Scale (Advisor: Dr. Navid Rekabsaz)"
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Intern
+      institution: Deezer Research, Paris, France
+      year: Sep 2024 – Feb 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "Supervisors: Dr. Elena Epure, Dr. Gabriel Meseguer-Brocal"
+        - "Designed methods to robustly detect synthetic (AI-generated) lyrics from audio and text"
+        - "Published work at ACL 2025 and ISMIR 2025"
+    - title: Research Intern
+      institution: ETH Zürich, Institute for Machine Learning (Rycolab), Switzerland
+      year: Jul 2024 – Sep 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - "Supervisors: Prof. Ryan Cotterell, Dr. Mario Giulianelli"
+        - "Introduced frameworks to build any-to-any multimodal models, focusing on video understanding"
+    - title: Research Assistant
+      institution: Johannes Kepler University, Institute of Computational Perception, Austria
+      year: Mar 2023 – Jul 2024
       description:
+        - "Advisors: Prof. Markus Schedl, Dr. Navid Rekabsaz"
+        - "Developed various modular, efficient, and multilingual methods in NLP"
+        - "Published multiple papers at top-tier conferences (ACL, EMNLP)"
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: Data Scientist, Powertrain Solutions
+      institution: Bosch, Linz, Austria
+      year: Mar 2023 – Dec 2023
+      description:
+        - "Developed production-grade predictive maintenance models"
+        - "Created a company-wide MLOps curriculum"
+    - title: Machine Learning Engineer
+      institution: Leftshift One, Graz, Austria
+      year: Jul 2021 – Oct 2022
+      description:
+        - "Designed, built and deployed end-to-end machine learning solutions for various customers"
+
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Programming Languages
+      items:
+        - Python, R, Java, JavaScript, SQL
+    - title: Machine Learning & NLP
+      items:
+        - PyTorch, TensorFlow, Transformers (Hugging Face)
+        - spaCy, NLTK, scikit-learn
+        - Large Language Models, Multimodal AI
+    - title: Tools & Frameworks
+      items:
+        - Git, Docker, Linux, Jupyter
+        - Weights & Biases, MLOps, AWS
+    - title: Research Areas
+      items:
+        - AI-Generated Content Detection
+        - Multilingual NLP, Sentence Segmentation
+        - Parameter-Efficient Transfer Learning
+        - Music Information Retrieval
+
+- title: Publications
+  type: time_table
+  contents:
+    - title: "Double Entendre: Robust Audio-Based AI-Generated Lyrics Detection via Multi-View Fusion"
+      year: 2025
+      description:
+        - "Findings of ACL 2025, Vienna, Austria"
+        - "Co-authors: G. Meseguer-Brocal, M. Schedl, E.V. Epure"
+    - title: "AI-Generated Song Detection via Lyrics Transcripts"
+      year: 2025
+      description:
+        - "ISMIR 2025, Daejeon, South Korea"
+        - "Co-authors: E.V. Epure, G. Meseguer-Brocal, M. Schedl, R. Hennequin"
+    - title: "Segment Any Text: A Universal Approach for Robust, Efficient and Adaptable Sentence Segmentation"
+      year: 2024
+      description:
+        - "EMNLP 2024, Miami, USA"
+        - "Co-authors: I. Sterner, I. Vulić, B. Minixhofer, M. Schedl"
+    - title: "ScaLearn: Simple and Highly Parameter-Efficient Task Transfer by Learning to Scale"
+      year: 2024
+      description:
+        - "Findings of ACL 2024, Bangkok, Thailand"
+        - "Co-authors: C. Holtermann, S. Masoudian, A. Lauscher, N. Rekabsaz"
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/segment-any-text/wtpsplit">wtpsplit</a>
+      year: 2024 – present
+      description: 
+        - "Co-Main Contributor to official PyPI library for universal sentence segmentation"
+        - "Implementation of EMNLP 2024 paper 'Segment Any Text'"
+        - "Supports 85+ languages with state-of-the-art performance"
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2020 – 2023
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Yearly Merit Scholarship, Johannes Kepler University, Linz
+    - year: 2022
       items:
-        - Max Planck Medal
+        - Winner, Student Challenge on Music Recommendation, Johannes Kepler University
+    - year: 2021
+      items:
+        - Winner, Student Team Challenge on Music Emotion Classification, Johannes Kepler University
 
-- title: Academic Interests
+- title: Mentoring & Supervision
+  type: time_table
+  contents:
+    - title: M.S. Thesis Co-Supervisor
+      institution: Johannes Kepler University, Linz
+      year: 2024 – 2025
+      description:
+        - "Student: Hari Krishnan Kesavan"
+        - "Thesis Topic: Chunking Strategies for Retrieval-Augmented Generation (RAG)"
+
+- title: Academic Activities
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - Peer Reviewer, ACL Rolling Review (ARR)
+    - year: 2024 – 2025
+      items:
+        - "Conference Presentations: ACL '24, EMNLP '24 (Posters), ISMIR '25 (Oral)"
+
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Natural Language Processing
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - AI-Generated Content Detection
+        - Multilingual and Cross-lingual NLP
+        - Universal Sentence Segmentation
+        - Large Language Models
+    - title: Multimodal AI
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Audio-Text Fusion
+        - Video Understanding
+        - Music Information Retrieval
+        - Cross-modal Learning
+    - title: Efficient Machine Learning
+      items:
+        - Parameter-Efficient Transfer Learning
+        - Model Compression and Scaling
+        - Task Transfer and Adaptation

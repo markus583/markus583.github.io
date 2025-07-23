@@ -1,33 +1,34 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: Two Papers Accepted at ACL 2025 and ISMIR 2025! 🎉
+date: 2024-12-01 07:59:00-0400
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+📄 **Exciting News: Two Papers Accepted at Top-Tier Conferences!**
+
+I'm thrilled to announce that two of my research papers have been accepted at major conferences:
+
+**1. ACL 2025 (Findings)**
+- **Title**: "Double Entendre: Robust Audio-Based AI-Generated Lyrics Detection via Multi-View Fusion"
+- **Authors**: Markus Frohmann, Gabriel Meseguer-Brocal, Markus Schedl, Elena V. Epure
+- **Conference**: Findings of the Association for Computational Linguistics (ACL 2025), Vienna, Austria
+
+**2. ISMIR 2025**
+- **Title**: "AI-Generated Song Detection via Lyrics Transcripts"  
+- **Authors**: Markus Frohmann, Elena V. Epure, Gabriel Meseguer-Brocal, Markus Schedl, Romain Hennequin
+- **Conference**: 26th International Society for Music Information Retrieval Conference, Daejeon, South Korea
+
+Both papers focus on detecting AI-generated content in music and lyrics, representing collaborative work from my research internship at **Deezer Research** in Paris. This research addresses the growing challenge of synthetic content detection in the age of large language models.
+
+**Key Contributions:**
+- Novel multimodal fusion approaches for robust detection
+- Cross-modal analysis of audio and text features
+- Practical applications for music industry and content moderation
+
+Looking forward to presenting this work and connecting with fellow researchers at both venues! The international scope of these conferences (Austria and South Korea) reflects the global nature of our research community.
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
-
-#### Hipster list
-
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
-
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
-
----
-
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
-
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
-
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+*This work was conducted during my research internship at Deezer Research under the supervision of Dr. Elena Epure and Dr. Gabriel Meseguer-Brocal.*

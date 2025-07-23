@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-10-15 15:30:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+🚀 Our EMNLP 2024 paper "Segment Any Text" is now live! Co-main contributor to wtpsplit library supporting 85+ languages. Check it out on [GitHub](https://github.com/segment-any-text/wtpsplit)! 🌍

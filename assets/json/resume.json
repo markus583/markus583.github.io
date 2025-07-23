@@ -1,200 +1,318 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Markus Frohmann",
+    "label": "NLP Researcher & AI Graduate Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "markus.frohmann@gmail.com",
+    "phone": "",
+    "url": "https://markus583.github.io/",
+    "summary": "M.S. student in Artificial Intelligence at Johannes Kepler University Linz, specializing in Natural Language Processing and multimodal AI. Experienced researcher with publications at top-tier conferences (ACL, EMNLP, ISMIR) and research experience at ETH Zürich and Deezer Research.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "Graz",
+      "countryCode": "AT",
+      "region": "Austria"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "markus583",
+        "url": "https://github.com/markus583"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "markus-frohmann",
+        "url": "https://linkedin.com/in/markus-frohmann"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "8PxZyK8AAAAJ",
+        "url": "https://scholar.google.com/citations?user=8PxZyK8AAAAJ&hl=de"
+      },
+      {
+        "network": "X (Twitter)",
+        "username": "FrohmannM",
+        "url": "https://x.com/FrohmannM"
       }
     ]
   },
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
+  "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Johannes Kepler University Linz",
+      "location": "Linz, Austria",
+      "url": "https://www.jku.at/en/",
+      "area": "Artificial Intelligence",
+      "studyType": "Master of Science",
+      "startDate": "2023-10-01",
+      "endDate": "2026-04-30",
+      "score": "1.2 GPA (Austrian scale: 1.0-5.0, equivalent to ≈3.8/4.0)",
+      "courses": [
+        "Advanced Machine Learning",
+        "Natural Language Processing",
+        "Deep Learning",
+        "Computer Vision"
+      ],
+      "honors": ["Visiting Student at National Taiwan University of Science and Technology (Spring 2025)"],
+      "thesis": "Robust AI-Generated Lyrics Detection (Advisor: Prof. Markus Schedl)"
+    },
+    {
+      "institution": "Johannes Kepler University Linz",
+      "location": "Linz, Austria",
+      "url": "https://www.jku.at/en/",
+      "area": "Artificial Intelligence",
+      "studyType": "Bachelor of Science",
+      "startDate": "2020-10-01",
+      "endDate": "2023-09-30",
+      "score": "1.2 GPA (equivalent to ≈3.8/4.0)",
+      "courses": [
+        "Machine Learning",
+        "Algorithms and Data Structures",
+        "Statistics and Probability",
+        "Linear Algebra"
+      ],
+      "honors": ["Graduated with Distinction"],
+      "thesis": "Simple and Efficient Task Transfer by Learning to Scale (Advisor: Dr. Navid Rekabsaz)"
+    }
+  ],
+  "work": [
+    {
+      "name": "Deezer Research",
+      "position": "Research Intern",
+      "url": "https://research.deezer.com/",
+      "startDate": "2024-09-01",
+      "endDate": "2025-02-28",
+      "summary": "Designed methods to robustly detect synthetic (AI-generated) lyrics from audio and text under supervision of Dr. Elena Epure and Dr. Gabriel Meseguer-Brocal.",
+      "highlights": [
+        "Developed multimodal approaches for AI-generated content detection",
+        "Published research at ACL 2025 and ISMIR 2025"
+      ],
+      "location": "Paris, France"
+    },
+    {
+      "name": "ETH Zürich, Institute for Machine Learning (Rycolab)",
+      "position": "Research Intern",
+      "url": "https://rycolab.io/",
+      "startDate": "2024-07-01",
+      "endDate": "2024-09-30",
+      "summary": "Introduced frameworks to build any-to-any multimodal models, focusing on video understanding under supervision of Prof. Ryan Cotterell and Dr. Mario Giulianelli.",
+      "highlights": [
+        "Developed multimodal model architectures",
+        "Focused on video understanding applications"
+      ],
+      "location": "Zürich, Switzerland"
+    },
+    {
+      "name": "Johannes Kepler University, Institute of Computational Perception",
+      "position": "Research Assistant",
+      "url": "https://www.jku.at/en/institute-of-computational-perception/",
+      "startDate": "2023-03-01",
+      "endDate": "2024-07-31",
+      "summary": "Developed various modular, efficient, and multilingual methods in NLP under advisors Prof. Markus Schedl and Dr. Navid Rekabsaz.",
+      "highlights": [
+        "Published multiple papers at top-tier conferences",
+        "Specialized in efficient NLP methods and task transfer"
+      ],
+      "location": "Linz, Austria"
+    },
+    {
+      "name": "Bosch",
+      "position": "Data Scientist, Powertrain Solutions",
+      "url": "https://www.bosch.com/",
+      "startDate": "2023-03-01",
+      "endDate": "2023-12-31",
+      "summary": "Developed production-grade predictive maintenance models and created a company-wide MLOps curriculum.",
+      "highlights": [
+        "Built production-grade predictive maintenance systems",
+        "Created MLOps curriculum for company-wide adoption"
+      ],
+      "location": "Linz, Austria"
+    },
+    {
+      "name": "Leftshift One",
+      "position": "Machine Learning Engineer",
+      "url": "https://www.leftshift.one/",
+      "startDate": "2021-07-01",
+      "endDate": "2022-10-31",
+      "summary": "Designed, built and deployed end-to-end machine learning solutions for various customers.",
+      "highlights": [
+        "End-to-end ML solution development",
+        "Customer-facing AI product deployment"
+      ],
+      "location": "Graz, Austria"
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Yearly Merit Scholarship",
+      "date": "2020-2023",
+      "awarder": "Johannes Kepler University, Linz",
+      "url": "",
+      "summary": "Received merit-based scholarship for outstanding academic performance for three consecutive years"
+    },
+    {
+      "title": "Winner, Student Challenge on Music Recommendation",
+      "date": "2022",
+      "awarder": "Johannes Kepler University",
+      "url": "",
+      "summary": "First place in university-wide music recommendation challenge"
+    },
+    {
+      "title": "Winner, Student Team Challenge on Music Emotion Classification",
+      "date": "2021",
+      "awarder": "Johannes Kepler University",
+      "url": "",
+      "summary": "First place in team challenge for music emotion classification"
     }
   ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
+  "certificates": [],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Double Entendre: Robust Audio-Based AI-Generated Lyrics Detection via Multi-View Fusion",
+      "publisher": "Findings of ACL 2025",
+      "releaseDate": "2025",
+      "url": "",
+      "summary": "Conference paper on detecting AI-generated lyrics using multimodal approaches"
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "AI-Generated Song Detection via Lyrics Transcripts",
+      "publisher": "ISMIR 2025",
+      "releaseDate": "2025",
+      "url": "",
+      "summary": "Conference paper on detecting AI-generated songs through text analysis"
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Segment Any Text: A Universal Approach for Robust, Efficient and Adaptable Sentence Segmentation",
+      "publisher": "EMNLP 2024",
+      "releaseDate": "2024",
+      "url": "",
+      "summary": "Conference paper on universal sentence segmentation methods"
+    },
+    {
+      "name": "ScaLearn: Simple and Highly Parameter-Efficient Task Transfer by Learning to Scale",
+      "publisher": "Findings of ACL 2024",
+      "releaseDate": "2024",
+      "url": "",
+      "summary": "Conference paper on efficient task transfer learning"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Programming Languages",
+      "level": "Advanced",
+      "icon": "fa-solid fa-code",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python",
+        "R",
+        "Java",
+        "JavaScript",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Machine Learning & NLP",
+      "level": "Expert",
+      "icon": "fa-solid fa-brain",
+      "keywords": [
+        "PyTorch",
+        "TensorFlow",
+        "Transformers",
+        "Hugging Face",
+        "spaCy",
+        "NLTK",
+        "scikit-learn"
+      ]
+    },
+    {
+      "name": "Tools & Technologies",
+      "level": "Advanced",
+      "icon": "fa-solid fa-tools",
+      "keywords": [
+        "Git",
+        "Docker",
+        "Linux",
+        "Jupyter",
+        "Weights & Biases",
+        "MLOps",
+        "AWS"
       ]
     }
   ],
   "languages": [
     {
       "language": "German",
-      "fluency": "Native speaker",
+      "fluency": "Native",
       "icon": ""
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Full Professional Proficiency",
+      "icon": ""
+    },
+    {
+      "language": "French",
+      "fluency": "Professional Working Proficiency",
+      "icon": ""
+    },
+    {
+      "language": "Mandarin",
+      "fluency": "Elementary Proficiency",
       "icon": ""
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Natural Language Processing",
+      "icon": "fa-solid fa-language",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Large Language Models",
+        "Text Generation",
+        "AI-Generated Content Detection",
+        "Multilingual NLP",
+        "Sentence Segmentation"
+      ]
+    },
+    {
+      "name": "Multimodal AI",
+      "icon": "fa-solid fa-robot",
+      "keywords": [
+        "Audio-Text Fusion",
+        "Video Understanding",
+        "Cross-modal Learning",
+        "Music Information Retrieval"
+      ]
+    },
+    {
+      "name": "Efficient ML",
+      "icon": "fa-solid fa-bolt",
+      "keywords": [
+        "Parameter-Efficient Transfer Learning",
+        "Model Compression",
+        "Task Transfer",
+        "MLOps"
       ]
     }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Available upon request",
+      "icon": "fa-solid fa-user",
+      "reference": "Academic and professional references available upon request"
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "wtpsplit - Universal Text Segmentation",
+      "isActive": true,
+      "description": "Co-main contributor to official PyPI library for universal sentence segmentation",
+      "highlights": [
+        "Official implementation of EMNLP 2024 paper 'Segment Any Text'",
+        "Supports 85+ languages with state-of-the-art performance",
+        "Production-ready library with extensive documentation"
+      ],
+      "url": "https://pypi.org/project/wtpsplit/",
+      "github": "https://github.com/segment-any-text/wtpsplit"
     }
   ]
 }
