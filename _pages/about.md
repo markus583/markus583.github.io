@@ -17,6 +17,7 @@ announcements:
 latest_posts:
   enabled: false
 selected_papers: true
+show_name: false
 ---
 
 <style>
