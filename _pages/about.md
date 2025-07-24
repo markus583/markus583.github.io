@@ -6,7 +6,7 @@ subtitle: NLP Researcher • AI MSc Student
 
 profile:
   align: center
-  image: profile_pic.jpg
+  image: profile_pic.JPG
   image_circular: true
 
 social: false
@@ -115,4 +115,4 @@ I have been fortunate to gain research experience at **ETH Zürich** (advised by
 
 ---
 
-Feel free to explore my [publications](/publications/) and [CV](/cv/) to learn more about me and my research.
+Feel free to explore my [CV](/cv/) and [publications](/publications/) to learn more about me and my research.

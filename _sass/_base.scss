@@ -735,7 +735,25 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
+      // Publication thumbnail styling
       .preview {
+        /* Prevent a very wide (letterbox-like) image from stretching the column */
+        width: 100%;           /* never exceed column width */
+        max-width: 100%;
+
+        /* Keep a unified look – choose one option below */
+        aspect-ratio: 16 / 9;  /* forces constant footprint */
+        object-fit: cover;     /* crop equally on the sides/top to fill the box */
+
+        /* Remove default drop-shadow that comes from z-depth-1 */
+        box-shadow: none !important;
+
+        /* If you prefer to show the entire image instead of cropping, comment the
+           two lines above and uncomment the following:
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
+        background: var(--global-card-bg-color);
+        */
       }
 
       .abbr {
@@ -746,6 +764,9 @@ footer.sticky-bottom {
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
           color: var(--global-card-bg-color) !important;
+
+          /* Eliminate shadow/shading */
+          box-shadow: none !important;
 
           a {
             color: white;

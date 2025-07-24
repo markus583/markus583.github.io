@@ -31,6 +31,7 @@
   ISBN = "979-8-89176-256-5",
   code={https://github.com/deezer/synthetic_lyrics_detection},
   arxiv={2506.15981},
+  preview={double_entendre_thumb.png},
   abstract = "The rapid advancement of AI-based music generation tools is revolutionizing the music industry but also posing challenges to artists, copyright holders, and providers alike. This necessitates reliable methods for detecting such AI-generated content. However, existing detectors, relying on either audio or lyrics, face key practical limitations: audio-based detectors fail to generalize to new or unseen generators and are vulnerable to audio perturbations; lyrics-based methods require cleanly formatted and accurate lyrics, unavailable in practice. To overcome these limitations, we propose a novel, practically grounded approach: a multimodal, modular late-fusion pipeline that combines automatically transcribed sung lyrics and speech features capturing lyrics related information within the audio. By relying on lyrical aspects directly from audio, our method enhances robustness, mitigates susceptibility to low-level artifacts, and enables practical applicability. Experiments show that our method, DE-detect, outperforms existing lyrics-based detectors while also being more robust to audio perturbations. Thus, it offers an effective, robust solution for detecting AI-generated music in real-world scenarios. Our code is available at https://github.com/deezer/robust-AI-lyrics-detection.",
   bibtex_show={true},
   selected={true}
@@ -44,6 +45,7 @@
   year={2025},
   address={Daejeon, South Korea},
   publisher=ismir,
+  preview={lyrics_det_thumb.png},
   abstract={The recent rise in capabilities of AI-based music generation tools has created an upheaval in the music industry, necessitating the creation of accurate methods to detect such AI-generated content. This can be done using audio-based detectors; however, it has been shown that they struggle to generalize to unseen generators or when the audio is perturbed. Furthermore, recent work used accurate and cleanly formatted lyrics sourced from a lyrics provider database to detect AI-generated music. However, in practice, such perfect lyrics are not available (only the audio is); this leaves a substantial gap in applicability in real-life use cases. In this work, we instead propose solving this gap by transcribing songs using general automatic speech recognition (ASR) models. We do this using several detectors. The results on diverse, multi-genre, and multi-lingual lyrics show generally strong detection performance across languages and genres, particularly for our best-performing model using Whisper large-v2 and LLM2Vec embeddings. In addition, we show that our method is more robust than state-of-the-art audio-based ones when the audio is perturbed in different ways and when evaluated on different music generators. Our code is available at https://github.com/deezer/robust-AI-lyrics-detection.},
   bibtex_show={true},
   code={https://github.com/deezer/synthetic_lyrics_detection},
@@ -69,6 +71,7 @@
   url = "https://aclanthology.org/2024.emnlp-main.612/",
   doi = "10.18653/v1/2024.emnlp-main.612",
   pages = "10932--10938",
+  preview={unlabeled_debias_thumb.png},
   abstract = "Language models frequently inherit societal biases from their training data. Numerous techniques have been proposed to mitigate these biases during both the pre-training and fine-tuning stages. However, fine-tuning a pre-trained debiased language model on a downstream task can reintroduce biases into the model. Additionally, existing debiasing methods for downstream tasks either (i) require labels of protected attributes (e.g., age, race, or political views) that are often not available or (ii) rely on indicators of bias, which restricts their applicability to gender debiasing since they rely on gender-specific words. To address this, we introduce a novel debiasing regularization technique based on the class-wise variance of embeddings. Crucially, our method does not require attribute labels and targets any attribute, thus addressing the shortcomings of existing debiasing methods. Our experiments on encoder language models and three datasets demonstrate that our method outperforms existing strong debiasing baselines that rely on target attribute labels while maintaining performance on the target task.",
   bibtex_show={true},
   arxiv={2409.19541},
@@ -96,6 +99,7 @@
   pages = "11908--11941",
   arxiv={2410.14489},
   code={https://github.com/segment-any-text/wtpsplit},
+  preview={sat_thumb.png},
   abstract={Segmenting text into sentences plays an early and crucial role in many NLP systems. This is commonly achieved by using rule-based or statistical methods relying on lexical features such as punctuation. Although some recent works no longer exclusively rely on punctuation, we find that no prior method achieves all of (i) robustness to missing punctuation, (ii) effective adaptability to new domains, and (iii) high efficiency. We introduce a new model — Segment any Text (SaT) — to solve this problem. To enhance robustness, we propose a new pretraining scheme that ensures less reliance on punctuation. To address adaptability, we introduce an extra stage of parameter-efficient fine-tuning, establishing state-of-the-art performance in distinct domains such as verses from lyrics and legal documents. Along the way, we introduce architectural modifications that result in a threefold gain in speed over the previous state of the art and solve spurious reliance on context far in the future. Finally, we introduce a variant of our model with fine-tuning on a diverse, multilingual mixture of sentence-segmented data, acting as a drop-in replacement and enhancement for existing segmentation tools. Overall, our contributions provide a universal approach for segmenting any text. Our method outperforms all baselines — including strong LLMs — across 8 corpora spanning diverse domains and languages, especially in practically relevant situations where text is poorly formatted. Our models and code, including documentation, are readily available at https://github.com/segment-any-text/wtpsplit under the MIT license.},
   bibtex_show={true},
   selected={true}
@@ -121,6 +125,7 @@
   doi = "10.18653/v1/2024.findings-acl.699",
   pages = "11743--11776",
   code={https://github.com/CPJKU/ScaLearn},
+  preview={scalearn_thumb.png},
   abstract = "Multi-task learning (MTL) has shown considerable practical benefits, particularly when using language models (LMs). While this is commonly achieved by learning tasks under a joint optimization procedure, some methods, such as AdapterFusion, divide the problem into two stages: (i) task learning, where knowledge specific to a task is encapsulated within sets of parameters (e.g., adapters), and (ii) transfer, where this already learned knowledge is leveraged for a target task. This separation of concerns provides numerous benefits (e.g., promoting reusability). However, current two stage MTL introduces a substantial number of additional parameters. We address this issue by leveraging the usefulness of linearly scaling the output representations of source adapters for transfer learning. We introduce ScaLearn, a simple and highly parameter-efficient two-stage MTL method that capitalizes on the knowledge of the source tasks by learning a minimal set of scaling parameters that enable effective transfer to a target task. Our experiments on three benchmarks (GLUE, SuperGLUE, and HumSet) and two encoder LMs show that ScaLearn consistently outperforms strong baselines with a small number of transfer parameters ({\textasciitilde}0.35{\%} of those of AdapterFusion). Remarkably, we observe that ScaLearn maintains its strong abilities even when further reducing parameters, achieving competitive results with only 8 transfer parameters per target task. Our proposed approach thus demonstrates the power of simple scaling as a promise for more efficient task transfer. Our code is available at https://github.com/CPJKU/ScaLearn.",
   arxiv={2310.01217},
   selected={true},
@@ -143,6 +148,7 @@
   publisher = "Association for Computational Linguistics",
   url = "https://aclanthology.org/2024.findings-eacl.77/",
   code={https://github.com/UhhDS/WhatTheWeight},
+  preview={wtw_thumb.png},
   pages = "1138--1157",
   abstract = "The knowledge encapsulated in a model is the core factor determining its final performance on downstream tasks. Much research in NLP has focused on efficient methods for storing and adapting different types of knowledge, e.g., in dedicated modularized structures, and on how to effectively combine these, e.g., by learning additional parameters. However, given the many possible options, a thorough understanding of the mechanisms involved in these compositions is missing, and hence it remains unclear which strategies to utilize. To address this research gap, we propose a novel framework for zero-shot module composition, which encompasses existing and some novel variations for selecting, weighting, and combining parameter modules under a single unified notion. Focusing on the scenario of domain knowledge and adapter layers, our framework provides a systematic unification of concepts, allowing us to conduct the first comprehensive benchmarking study of various zero-shot knowledge composition strategies. In particular, we test two module combination methods and five selection and weighting strategies for their effectiveness and efficiency in an extensive experimental setup. Our results highlight the efficacy of ensembling but also hint at the power of simple though often-ignored weighting methods. Further in-depth analyses allow us to understand the role of weighting vs. top-k selection, and show that, to a certain extent, the performance of adapter composition can even be predicted.",
   arxiv={2401.12756},
@@ -164,6 +170,7 @@
   ISSN={2504-2289},
   url={https://www.mdpi.com/2504-2289/7/3/137},
   doi={10.3390/bdcc7030137},
+  preview={btc_bdcc_thumb.png},
   abstract={Recently, various methods to predict the future price of financial assets have emerged. One promising approach is to combine the historic price with sentiment scores derived via sentiment analysis techniques. In this article, we focus on predicting the future price of Bitcoin, which is currently the most popular cryptocurrency. More precisely, we propose a hybrid approach, combining time series forecasting and sentiment prediction from microblogs, to predict the intraday price of Bitcoin. Moreover, in addition to standard sentiment analysis methods, we are the first to employ a fine-tuned BERT model for this task. We also introduce a novel weighting scheme in which the weight of the sentiment of each tweet depends on the number of its creator’s followers. For evaluation, we consider periods with strongly varying ranges of Bitcoin prices. This enables us to assess the models w.r.t. robustness and generalization to varied market conditions. Our experiments demonstrate that BERT-based sentiment analysis and the proposed weighting scheme improve upon previous methods. Specifically, our hybrid models that use linear regression as the underlying forecasting algorithm perform best in terms of the mean absolute error (MAE of 2.67) and root mean squared error (RMSE of 3.28). However, more complicated models, particularly long short-term memory networks and temporal convolutional networks, tend to have generalization and overfitting issues, resulting in considerably higher MAE and RMSE scores.},
   bibtex_show={true}
 }
@@ -198,6 +205,7 @@
   pages = "524--541",
   ISBN = "979-8-89176-233-6",
   code={https://github.com/deezer/synthetic_lyrics_detection},
+  preview={labrak_dataset_thumb.png},
   abstract = "In recent years, the use of large language models (LLMs) to generate music content, particularly lyrics, has gained in popularity. These advances provide valuable tools for artists and enhance their creative processes, but they also raise concerns about copyright violations, consumer satisfaction, and content spamming. Previous research has explored content detection in various domains. However, no work has focused on the text modality, lyrics, in music. To address this gap, we curated a diverse dataset of real and synthetic lyrics from multiple languages, music genres, and artists. The generation pipeline was validated using both humans and automated methods. We performed a thorough evaluation of existing synthetic text detection approaches on lyrics, a previously unexplored data type. We also investigated methods to adapt the best-performing features to lyrics through unsupervised domain adaptation. Following both music and industrial constraints, we examined how well these approaches generalize across languages, scale with data availability, handle multilingual language content, and perform on novel genres in few-shot settings. Our findings show promising results that could inform policy decisions around AI-generated music and enhance transparency for users.",
   arxiv={2406.15231},
   bibtex_show={true}
@@ -218,6 +226,7 @@
   doi={https://doi.org/10.1007/978-3-031-86651-7_16},
   url={https://dl.acm.org/doi/10.1007/978-3-031-86651-7_16},
   abstract={Age-related Macular Degeneration (AMD) is the most com-mon cause of severe vision loss in individuals over 50, primarily affecting central vision. In its early stages, AMD often presents no symptoms, making early detection and monitoring its progression essential. Managing AMD effectively requires close observation of neovascular activity, especially its response to anti-VEGF treatments. In this work, we present a predictive model that forecasts AMD progression 90 days in advance using a single Optical Coherence Tomography (OCT) B-scan. Our app-roach leverages advanced deep learning techniques and a novel latent matching model to improve the accuracy of disease state predictions and guide anti-VEGF treatment strategies.},
+  preview={mario_task2_thumb.png},
   bibtex_show={true}
 }
 
@@ -236,5 +245,6 @@
   doi={https://doi.org/10.1007/978-3-031-86651-7_15},
   url={https://dl.acm.org/doi/10.1007/978-3-031-86651-7_15},
   abstract={Age-related Macular Degeneration (AMD) is a leading cause of vision loss in developed countries. The evolution of neovascular activity in AMD, particularly in response to anti-VEGF treatments, is critical for effective management. This paper presents a simple but highly effective method for classifying the evolution between two consecutive Optical Coherence Tomography (OCT) B-scans, focusing on detecting changes indicative of neovascular activity. Our approach leverages state-of-theart deep learning techniques, namely transfer learning of the DinoV2 model with extensive data augmentations, to improve the planning of individualized anti-VEGF treatment strategies. It achieves an F1 score of 0.83 on the public leaderboard of task 1 of the MARIO challenge.},
+  preview={mario_task1_thumb.png},
   bibtex_show={true}
 }
