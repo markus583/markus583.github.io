@@ -8,7 +8,7 @@
     - name: Languages
       value: German (Native), English (Full Professional), French (Professional), Mandarin (Elementary)
     - name: Email
-      value: markus.frohmann@gmail.com
+      value: markus.{lastname}@gmail.com
 
 - title: Education
   type: time_table

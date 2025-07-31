@@ -84,7 +84,22 @@ show_name: false
 
 <div class="contact-section">
   <div style="font-size: 1.1em; margin-bottom: 15px;">
-    <a href="mailto:markus.frohmann@gmail.com" style="color: #007bff; text-decoration: none; font-weight: 500;">markus.frohmann@gmail.com</a>
+    <span id="email-slot"></span>
+    <script>
+      (function() {
+        const user = 'markus';
+        const last = 'frohmann';
+        const domain = 'gmail.com';
+        const email = `${user}.${last}@${domain}`;
+        const link = document.createElement('a');
+        link.href = `mailto:${email}`;
+        link.textContent = email;
+        link.style.color = '#007bff';
+        link.style.textDecoration = 'none';
+        link.style.fontWeight = '500';
+        document.getElementById('email-slot').appendChild(link);
+      })();
+    </script>
   </div>
   
   <div style="margin-bottom: 20px;">
