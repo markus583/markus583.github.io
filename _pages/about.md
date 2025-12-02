@@ -233,7 +233,9 @@ html[data-theme="dark"] .post article h2 {
 }
 
 .news .table-responsive {
-  overflow: hidden !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  max-height: none !important;
 }
 
 .news table {
