@@ -66,6 +66,28 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Open-source libraries -->
+    {% if page.opensource_libraries %}
+      <h2>open-source libraries</h2>
+      <div style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 24px; border-radius: 12px; border-left: 4px solid #2563a8; margin: 24px 0; box-shadow: 0 2px 12px rgba(37, 99, 168, 0.08); transition: all 0.3s ease;">
+        <div style="margin-bottom: 8px;">
+          <strong style="font-size: 1.15em;">
+            <a href="https://github.com/segment-any-text/wtpsplit" target="_blank" style="color: #2563a8; text-decoration: none; transition: color 0.2s ease;" onmouseover="this.style.color='#1e4d84'" onmouseout="this.style.color='#2563a8'">
+              wtpsplit / Segment Any Text
+            </a>
+          </strong>
+        </div>
+        <div style="color: #4a5568; font-size: 0.98em; line-height: 1.6; margin-bottom: 10px;">
+          Robust text segmentation for 80+ languages and diverse domains
+        </div>
+        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+          <span style="color: #5a6c7d; font-size: 0.92em; display: flex; align-items: center; gap: 5px;">
+            <span style="font-size: 1.1em;">⭐️</span> 1,200+ stars on GitHub
+          </span>
+        </div>
+      </div>
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">

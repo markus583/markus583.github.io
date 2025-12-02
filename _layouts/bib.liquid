@@ -162,7 +162,39 @@
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+      {% if entry.abbr %}
+        {% comment %} Create clean venue format: "ACL 2024 (Findings), Month 2024" for *CL conferences {% endcomment %}
+        {% assign booktitle_lower = entry.booktitle | downcase %}
+        {% assign cl_conferences = 'ACL,EMNLP,NAACL,EACL,COLING' | split: ',' %}
+        {% assign is_cl_conference = false %}
+        {% for cl_conf in cl_conferences %}
+          {% if entry.abbr == cl_conf %}
+            {% assign is_cl_conference = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        
+        {% if booktitle_lower contains 'findings' %}
+          {% capture entrytype %}<em>{{ entry.abbr }} {{ entry.year }} (Findings)</em>{% endcapture %}
+        {% elsif booktitle_lower contains 'workshop' %}
+          {% capture entrytype %}<em>{{ entry.abbr }} {{ entry.year }} (Workshop)</em>{% endcapture %}
+        {% elsif booktitle_lower contains 'challenge' %}
+          {% comment %} Extract specific challenge name for more concrete description {% endcomment %}
+          {% if booktitle_lower contains 'mario' %}
+            {% capture entrytype %}<em>{{ entry.abbr }} {{ entry.year }} (MARIO Challenge)</em>{% endcapture %}
+          {% elsif booktitle_lower contains 'diamond' %}
+            {% capture entrytype %}<em>{{ entry.abbr }} {{ entry.year }} (DIAMOND Challenge)</em>{% endcapture %}
+          {% else %}
+            {% capture entrytype %}<em>{{ entry.abbr }} {{ entry.year }} (Challenge)</em>{% endcapture %}
+          {% endif %}
+        {% elsif is_cl_conference %}
+          {% capture entrytype %}<em>{{ entry.abbr }} {{ entry.year }} (Main Conference)</em>{% endcapture %}
+        {% else %}
+          {% capture entrytype %}<em>{{ entry.abbr }} {{ entry.year }}</em>{% endcapture %}
+        {% endif %}
+      {% else %}
+        {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+      {% endif %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
@@ -185,7 +217,7 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entrymonth != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
