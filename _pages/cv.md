@@ -9,7 +9,7 @@ description:
 ---
 
 <div style="text-align: right; margin-bottom: 20px;">
-  <a href="{{ '/assets/pdf/cv.Markus_Frohmann_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" 
+  <a href="{{ '/assets/pdf/Markus_Frohmann_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" 
      style="display: inline-block; background-color: #007bff; color: white; padding: 10px 20px; 
             text-decoration: none; border-radius: 5px; font-weight: bold;">
     <i class="fa-solid fa-file-pdf"></i> Download CV (PDF)

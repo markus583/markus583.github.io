@@ -9,9 +9,9 @@ last_name: Frohmann
 contact_note: >
   Feel free to reach out via email for research collaborations or academic opportunities.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  NLP researcher and PhD applicant in robust, modular, and multilingual AI. Publications, projects, and CV available.
+  Master's student in AI. NLP researcher focusing on robust, modular, and multilingual systems. Publications, projects, and CV.
 footer_text: >
-keywords: natural language processing, machine learning, computational linguistics, NLP, AI, academic-website, portfolio-website
+keywords: Markus Frohmann, natural language processing, NLP, machine learning, artificial intelligence, AI, multimodal AI, multilingual NLP, robust AI, modular systems, AI-generated content detection, academic website, computational linguistics 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧱 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
