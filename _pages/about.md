@@ -129,6 +129,12 @@ html[data-theme="dark"] .post-header .post-title {
   font-size: 0.6em;
 }
 
+html[data-theme="dark"] .post-header .desc::before,
+html[data-theme="dark"] .post-header .desc::after {
+  color: #4a90d9;
+  opacity: 0.4;
+}
+
 .post-header .desc::before {
   left: 0;
 }
@@ -227,8 +233,7 @@ html[data-theme="dark"] .post article h2 {
 }
 
 .news .table-responsive {
-  overflow-x: hidden !important;
-  overflow-y: auto;
+  overflow: hidden !important;
 }
 
 .news table {
@@ -377,11 +382,21 @@ html[data-theme="dark"] .publications .author {
   font-size: 0.91rem;
   color: #5a6c7d;
   margin-bottom: 0.8rem;
-  font-style: italic;
+  font-style: normal;
+}
+
+.publications .periodical em {
+  color: #5a6c7d !important;
+  font-style: normal !important;
+  font-weight: normal !important;
 }
 
 html[data-theme="dark"] .publications .periodical {
-  color: var(--global-text-color);
+  color: var(--global-text-color-light);
+}
+
+html[data-theme="dark"] .publications .periodical em {
+  color: var(--global-text-color-light) !important;
 }
 
 .publications .links {
