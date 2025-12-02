@@ -641,7 +641,7 @@ html[data-theme="dark"] .btn:hover {
   </div>
   
   <div class="phd-banner" style="background: linear-gradient(135deg, #e8f4fd 0%, #dce9f7 100%); border: 2px solid #9fc9ed; padding: 14px 24px; border-radius: 10px; display: inline-block; box-shadow: 0 2px 12px rgba(37, 99, 168, 0.12); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 16px rgba(37, 99, 168, 0.18)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 2px 12px rgba(37, 99, 168, 0.12)'">
-    <strong class="phd-text" style="color: #1e4d84; font-size: 1.02em;">🎓 Available for PhD Position starting Fall 2026!</strong>
+    <strong class="phd-text" style="color: #1e4d84; font-size: 1.02em;">🎓 Available for PhD Positions starting Fall 2026!</strong>
   </div>
 
 <style>
