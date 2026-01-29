@@ -126,7 +126,18 @@ a {
   /* Ensure no borders bleed through */
   border-left: none !important;
   border-right: none !important;
-  border-radius: 12px; /* Softer corners on hover background */
+  border-radius: 12px !important; /* Increased softness and forced application */
+}
+
+/* Force border-radius on table cells for the row effect to work */
+.news td:first-child, .news th:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.news td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .news tr:hover {
@@ -167,7 +178,7 @@ html[data-theme="dark"] .opensource-card:hover {
   border-left: 3px solid transparent; /* Marker for hover */
   padding: 1rem 0;
   margin-bottom: 1rem;
-  border-radius: 0;
+  border-radius: 12px !important; /* Increased and forced softness */
   box-shadow: none;
   transition: all 0.2s ease;
 }
@@ -185,7 +196,7 @@ html[data-theme="dark"] .opensource-card:hover {
 .publications h2.bibliography {
   color: var(--global-theme-color); /* Solid brand color (Blue) */
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Kept at 1.5rem as per final state, despite previous thought to increase */
   /* Strong structural divider */
   border-bottom: 2px solid var(--global-divider-color); 
   padding-bottom: 0.4rem;
@@ -212,6 +223,7 @@ html[data-theme="dark"] .opensource-card:hover {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 0.4rem 1rem;
+  border-radius: 6px; /* Slightly rounder buttons */
 }
 
 .btn:hover {
@@ -298,4 +310,342 @@ html[data-theme="dark"] .profile img {
 html[data-theme="dark"] .btn:hover {
   background: var(--global-text-color);
   color: var(--global-bg-color);
+}
+
+/* 6. Photography Section (Clean, Gallery Style) */
+
+.photography-intro {
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.gear-section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+/* Flatten the hierarchy for gear */
+.gear-column h4 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.6rem 0;
+  font-weight: 600;
+}
+
+.gear-body {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  margin-bottom: 0.3rem;
+}
+
+.gear-sub {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  font-weight: 300;
+}
+
+.lens-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--global-text-color);
+  columns: 2;
+  column-gap: 1.5rem;
+}
+
+.lens-list li {
+  margin-bottom: 0.35rem;
+  white-space: nowrap;
+}
+
+.lens-nickname {
+  font-size: 0.8em;
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
+/* Remove gradient from active filter, use simple outline */
+.filter-active {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: var(--global-hover-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--global-theme-color);
+}
+
+.filter-active.visible {
+  display: flex;
+}
+
+.filter-label {
+  font-weight: 600;
+}
+
+.filter-clear {
+  background: none;
+  border: none;
+  color: var(--global-text-color-light);
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.filter-clear:hover {
+  color: var(--global-theme-color);
+}
+
+/* Photo Feed - Remove cards, use list style */
+.photo-feed {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.photo-post {
+  background: none;
+  border: none;
+  /* Add separator line instead of card box */
+  border-bottom: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  overflow: visible;
+}
+
+.photo-post.hidden {
+  display: none;
+}
+
+.photo-post:hover {
+  box-shadow: none;
+}
+
+/* Simple Header */
+.post-header-feed {
+  padding: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: none;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  font-weight: 500;
+}
+
+.post-location {
+  font-size: 0.85rem;
+  color: var(--global-theme-color);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Image Container - clean */
+.post-image-container {
+  position: relative;
+  width: 100%;
+  background: var(--global-hover-bg-color);
+  border-radius: 4px; /* Slight radius on image itself */
+  overflow: hidden;
+}
+
+.post-image-container > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.2s ease;
+}
+
+/* Carousel controls - simple */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--global-text-color);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.post-carousel:hover .carousel-nav {
+  opacity: 1;
+}
+
+.carousel-nav:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+}
+
+.carousel-nav.prev { left: 12px; }
+.carousel-nav.next { right: 12px; }
+
+/* Caption - clean text */
+.post-caption {
+  padding: 12px 0 0 0;
+}
+
+.caption-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--global-text-color);
+  margin-bottom: 4px;
+}
+
+.caption-text {
+  font-size: 0.95rem;
+  color: var(--global-text-color);
+  line-height: 1.6;
+}
+
+/* Meta tags - simple text or minimal badges */
+.post-meta {
+  padding: 8px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.meta-tag {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid var(--global-divider-color);
+  background: none;
+  color: var(--global-text-color-light);
+  font-family: "Inter", sans-serif;
+}
+
+.meta-tag:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  transform: none;
+}
+
+.meta-tag.country {
+  /* Optional: specific color */
+}
+
+.meta-tag.lens {
+  /* Optional: specific color */
+}
+
+/* View Toggle - Simple text or minimal buttons */
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 2rem;
+  background: none;
+  padding: 0;
+}
+
+.view-btn {
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.view-btn:hover {
+  color: var(--global-theme-color);
+}
+
+.view-btn.active {
+  background: none;
+  border: 1px solid var(--global-divider-color);
+  color: var(--global-text-color);
+  box-shadow: none;
+}
+
+/* Grid View - Clean tight grid */
+.photo-feed.grid-view {
+  max-width: 100%; /* Use full width */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.photo-feed.grid-view .photo-post {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  aspect-ratio: 1;
+}
+
+/* Grid overlay - Minimal */
+.photo-feed.grid-view .photo-post::before {
+  /* Remove the expand icon, keep it clean */
+  content: none; 
+}
+
+.photo-feed.grid-view .photo-post::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  text-align: center;
+}
+
+.photo-feed.grid-view .photo-post:hover::after {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .photo-feed.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+  }
+  
+  .gear-section {
+    gap: 1.5rem;
+  }
 }
