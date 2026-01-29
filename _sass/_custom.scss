@@ -140,6 +140,7 @@ a {
   border-bottom-right-radius: 12px;
 }
 
+
 .news tr:hover {
   background-color: var(--global-hover-bg-color, rgba(0,0,0,0.02)) !important;
   transform: translateX(3px); /* Consistent right movement */
@@ -196,7 +197,7 @@ html[data-theme="dark"] .opensource-card:hover {
 .publications h2.bibliography {
   color: var(--global-theme-color); /* Solid brand color (Blue) */
   font-weight: 700;
-  font-size: 1.5rem; /* Kept at 1.5rem as per final state, despite previous thought to increase */
+  font-size: 1.5rem;
   /* Strong structural divider */
   border-bottom: 2px solid var(--global-divider-color); 
   padding-bottom: 0.4rem;
@@ -312,75 +313,77 @@ html[data-theme="dark"] .btn:hover {
   color: var(--global-bg-color);
 }
 
-/* 6. Photography Section (Clean, Gallery Style) */
+/* 6. Photography Section - Robust/Clean Style */
 
-.photography-intro {
-  border-top: 1px solid var(--global-divider-color);
-  padding-top: 1.5rem;
-  margin-bottom: 2.5rem;
-}
-
+/* Gear Section - Clean List */
 .gear-section {
   display: flex;
   justify-content: flex-start;
   gap: 4rem;
   flex-wrap: wrap;
   max-width: 800px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
-/* Flatten the hierarchy for gear */
+.gear-column {
+  text-align: left;
+}
+
 .gear-column h4 {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   color: var(--global-text-color-light);
-  margin: 0 0 0.6rem 0;
+  margin: 0 0 0.8rem 0;
   font-weight: 600;
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 4px;
+  display: inline-block;
 }
 
 .gear-body {
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--global-text-color);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .gear-sub {
   font-size: 0.9rem;
   color: var(--global-text-color-light);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .lens-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--global-text-color);
   columns: 2;
-  column-gap: 1.5rem;
+  column-gap: 2rem;
 }
 
 .lens-list li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.5rem;
   white-space: nowrap;
 }
 
 .lens-nickname {
-  font-size: 0.8em;
+  font-size: 0.85rem;
   color: var(--global-text-color-light);
   font-style: italic;
+  margin-left: 4px;
 }
 
-/* Remove gradient from active filter, use simple outline */
+/* Filter Banner - Clean, no gradient */
 .filter-active {
   display: none;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   padding: 10px 16px;
-  background: var(--global-hover-bg-color);
+  background: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
   border-radius: 6px;
   margin-bottom: 1.5rem;
@@ -407,24 +410,23 @@ html[data-theme="dark"] .btn:hover {
 }
 
 .filter-clear:hover {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
 }
 
-/* Photo Feed - Remove cards, use list style */
+/* Photo Feed - Instagram Style but Cleaner */
 .photo-feed {
   max-width: 600px;
   margin: 0 auto;
 }
 
 .photo-post {
-  background: none;
-  border: none;
-  /* Add separator line instead of card box */
-  border-bottom: 1px solid var(--global-divider-color);
-  border-radius: 0;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  overflow: visible;
+  background: var(--global-bg-color);
+  /* Minimal border, no shadow */
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px; 
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
 }
 
 .photo-post.hidden {
@@ -432,16 +434,17 @@ html[data-theme="dark"] .btn:hover {
 }
 
 .photo-post:hover {
+  border-color: var(--global-text-color-light);
   box-shadow: none;
 }
 
-/* Simple Header */
+/* Post Header */
 .post-header-feed {
-  padding: 0 0 10px 0;
+  padding: 12px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: none;
+  border-bottom: 1px solid var(--global-divider-color);
 }
 
 .post-date {
@@ -458,39 +461,73 @@ html[data-theme="dark"] .btn:hover {
   gap: 4px;
 }
 
-/* Image Container - clean */
+.post-location::before {
+  content: '📍';
+  font-size: 0.9em;
+  filter: grayscale(100%); /* Desaturate emoji slightly */
+  opacity: 0.7;
+}
+
+/* Images */
 .post-image-container {
   position: relative;
   width: 100%;
-  background: var(--global-hover-bg-color);
-  border-radius: 4px; /* Slight radius on image itself */
-  overflow: hidden;
+  background: var(--global-bg-color);
+  line-height: 0;
 }
 
 .post-image-container > img {
   max-width: 100%;
+  max-height: 75vh;
   height: auto;
+  width: auto;
   display: block;
   margin: 0 auto;
-  transition: opacity 0.2s ease;
+  cursor: pointer;
 }
 
-/* Carousel controls - simple */
+/* Carousel */
+.post-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--global-bg-color);
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  max-height: 75vh;
+  height: auto;
+  width: auto;
+}
+
+/* Clean Carousel Nav */
 .carousel-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 32px;
   height: 32px;
-  background: var(--global-bg-color);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--global-divider-color);
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-  color: var(--global-text-color);
+  font-size: 1.2rem;
+  color: #333;
   opacity: 0;
   transition: opacity 0.2s ease;
   z-index: 10;
@@ -501,151 +538,170 @@ html[data-theme="dark"] .btn:hover {
 }
 
 .carousel-nav:hover {
-  color: var(--global-theme-color);
-  border-color: var(--global-theme-color);
+  background: #ffffff;
+  color: #000;
 }
 
 .carousel-nav.prev { left: 12px; }
 .carousel-nav.next { right: 12px; }
 
-/* Caption - clean text */
+.carousel-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+
+.carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 0.2s ease;
+}
+
+.carousel-dot.active {
+  background: #ffffff;
+}
+
+/* Captions & Meta */
 .post-caption {
-  padding: 12px 0 0 0;
+  padding: 16px;
+  border-top: 1px solid var(--global-divider-color);
 }
 
 .caption-title {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--global-text-color);
   margin-bottom: 4px;
 }
 
 .caption-text {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--global-text-color);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-/* Meta tags - simple text or minimal badges */
 .post-meta {
-  padding: 8px 0 0 0;
+  padding: 0 16px 14px 16px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
+/* Meta Tags - Outline style instead of colored pills */
 .meta-tag {
   font-size: 0.75rem;
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease;
   border: 1px solid var(--global-divider-color);
-  background: none;
+  background: transparent;
   color: var(--global-text-color-light);
-  font-family: "Inter", sans-serif;
+  font-family: inherit;
 }
 
 .meta-tag:hover {
-  color: var(--global-theme-color);
   border-color: var(--global-theme-color);
-  transform: none;
+  color: var(--global-theme-color);
+  background: transparent;
 }
 
-.meta-tag.country {
-  /* Optional: specific color */
-}
+/* Specific colors for types can be subtle text color changes if needed, 
+   but keeping them uniform is more "robust/academic" */
 
-.meta-tag.lens {
-  /* Optional: specific color */
-}
-
-/* View Toggle - Simple text or minimal buttons */
+/* View Toggle - Centered */
 .view-toggle {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 2rem;
-  background: none;
-  padding: 0;
 }
 
-.view-btn {
-  padding: 6px 12px;
-  border: 1px solid transparent;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--global-text-color-light);
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.view-btn:hover {
-  color: var(--global-theme-color);
-}
-
+/* Reuse standard .btn class for view toggles, but handle active state */
 .view-btn.active {
-  background: none;
-  border: 1px solid var(--global-divider-color);
-  color: var(--global-text-color);
-  box-shadow: none;
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+  border-color: var(--global-text-color);
 }
 
-/* Grid View - Clean tight grid */
+/* Grid View Overrides */
 .photo-feed.grid-view {
-  max-width: 100%; /* Use full width */
+  max-width: 900px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
 }
 
 .photo-feed.grid-view .photo-post {
+  border: none;
+  border-radius: 0;
   margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
+  background: transparent;
   aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-/* Grid overlay - Minimal */
-.photo-feed.grid-view .photo-post::before {
-  /* Remove the expand icon, keep it clean */
-  content: none; 
+.photo-feed.grid-view .photo-post:hover {
+  box-shadow: none;
+  opacity: 0.9;
 }
 
-.photo-feed.grid-view .photo-post::after {
-  content: attr(data-title);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 2rem 0.5rem 0.5rem 0.5rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
-  color: white;
-  font-size: 0.75rem;
-  font-weight: 500;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  pointer-events: none;
-  text-align: center;
+.photo-feed.grid-view .post-header-feed,
+.photo-feed.grid-view .post-caption,
+.photo-feed.grid-view .post-meta,
+.photo-feed.grid-view .carousel-nav,
+.photo-feed.grid-view .carousel-dots {
+  display: none;
 }
 
-.photo-feed.grid-view .photo-post:hover::after {
-  opacity: 1;
+.photo-feed.grid-view .post-image-container,
+.photo-feed.grid-view .post-carousel,
+.photo-feed.grid-view .carousel-track,
+.photo-feed.grid-view .carousel-slide {
+  height: 100%;
+}
+
+.photo-feed.grid-view .carousel-slide img,
+.photo-feed.grid-view .post-image-container > img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
+  .photo-feed {
+    max-width: 100%;
+  }
+  
   .photo-feed.grid-view {
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
   }
   
+  .photo-post {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 1rem;
+    border-top: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  
   .gear-section {
+    flex-direction: column;
     gap: 1.5rem;
+    align-items: flex-start;
+  }
+  
+  .lens-list {
+    columns: 1;
   }
 }

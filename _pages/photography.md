@@ -7,7 +7,7 @@ title: photography
 description: A few moments from life.
 ---
 
-<div class="photography-intro">
+<div style="border-top: 1px solid var(--global-divider-color); padding-top: 1.5rem; margin-bottom: 2.5rem;">
   <div class="gear-section">
     <div class="gear-column">
       <h4>Body</h4>
@@ -34,7 +34,7 @@ description: A few moments from life.
 </div>
 
 <div class="view-toggle">
-  <button class="view-btn" id="feedBtn" onclick="setView('feed')">
+  <button class="btn view-btn" id="feedBtn" onclick="setView('feed')">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <rect x="3" y="3" width="18" height="18" rx="2"/>
       <line x1="3" y1="9" x2="21" y2="9"/>
@@ -42,7 +42,7 @@ description: A few moments from life.
     </svg>
     Feed
   </button>
-  <button class="view-btn active" id="gridBtn" onclick="setView('grid')">
+  <button class="btn view-btn active" id="gridBtn" onclick="setView('grid')">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <rect x="3" y="3" width="7" height="7"/>
       <rect x="14" y="3" width="7" height="7"/>
