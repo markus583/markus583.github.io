@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-photography",
+          title: "photography",
+          description: "A few moments from life.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/photography/";
+          },
         },{id: "news-wtpsplit-the-repository-containing-the-library-for-our-state-of-the-art-text-segmentation-tool-segment-any-text-reached-️1000-stars-️-on-github-check-it-out-here",
           title: '🌍 wtpsplit, the repository containing the library for our state-of-the-art text segmentation tool...',
           description: "",
