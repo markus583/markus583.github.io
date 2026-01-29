@@ -2,6 +2,38 @@
   {% if site.photography != blank %}
     {% assign photos = site.photography | sort: 'date' | reverse %}
     {% for photo in photos %}
+      {% assign overlay_title = photo.title | default: '' %}
+      {% assign overlay_place = photo.location | default: photo.country | default: '' %}
+      {% if photo.lenses %}
+        {% assign overlay_lens_raw = photo.lenses[0] %}
+      {% else %}
+        {% assign overlay_lens_raw = photo.lens | default: '' %}
+      {% endif %}
+
+      {%- comment -%}
+      Overlay cleanup: remove placeholder/comment markers like "<-- ... -->" or arrows.
+      Also truncate at "(" to keep it compact.
+      {%- endcomment -%}
+      {% assign overlay_lens_clean = overlay_lens_raw
+        | strip_html
+        | strip_newlines
+        | replace: '<!--', ''
+        | replace: '-->', ''
+        | replace: '<--', ''
+        | replace: '→', ''
+        | replace: '←', ''
+        | strip
+        | split: '('
+        | first
+        | strip
+      %}
+
+      {% capture overlay_meta %}
+        {% if overlay_place != blank %}{{ overlay_place }}{% endif %}
+        {% if overlay_place != blank and overlay_lens_clean != blank %} · {% endif %}
+        {% if overlay_lens_clean != blank %}{{ overlay_lens_clean }}{% endif %}
+      {% endcapture %}
+
       <div class="photo-post" id="post-{{ forloop.index }}" data-country="{{ photo.country }}" data-lenses="{% if photo.lenses %}{{ photo.lenses | join: ',' }}{% else %}{{ photo.lens }}{% endif %}" data-title="{{ photo.title }}" onclick="openPost(this)">
         <div class="post-header-feed">
           <span class="post-date">{{ photo.date | date: '%b %Y' }}</span>
@@ -39,6 +71,16 @@
             <img src="{{ photo.image | prepend: '/assets/' | relative_url }}" alt="{{ photo.title }}" loading="lazy">
           {% endif %}
         </div>
+        {% if overlay_title != blank or overlay_meta != blank %}
+          <div class="grid-overlay" aria-hidden="true">
+            {% if overlay_title != blank %}
+              <div class="grid-overlay-title">{{ overlay_title | escape }}</div>
+            {% endif %}
+            {% if overlay_meta != blank %}
+              <div class="grid-overlay-meta">{{ overlay_meta | strip | escape }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
         {% if photo.title or photo.content != blank %}
           <div class="post-caption">
             {% if photo.title %}
@@ -52,18 +94,18 @@
         {% if photo.country or photo.lens %}
           <div class="post-meta">
             {% if photo.country %}
-              <button class="meta-tag country" onclick="event.stopPropagation(); filterPhotos('country', '{{ photo.country }}')">
+              <button class="meta-tag country" onclick="filterPhotos('country', '{{ photo.country }}')">
                 <span class="fi fi-{{ site.data.countries[photo.country].code }}"></span> {{ photo.country }}
               </button>
             {% endif %}
             {% if photo.lenses %}
               {% for lens in photo.lenses %}
-                <button class="meta-tag lens" onclick="event.stopPropagation(); filterPhotos('lens', '{{ lens }}')">
+                <button class="meta-tag lens" onclick="filterPhotos('lens', '{{ lens }}')">
                   🔭 {{ lens }}
                 </button>
               {% endfor %}
             {% elsif photo.lens %}
-              <button class="meta-tag lens" onclick="event.stopPropagation(); filterPhotos('lens', '{{ photo.lens }}')">
+              <button class="meta-tag lens" onclick="filterPhotos('lens', '{{ photo.lens }}')">
                 🔭 {{ photo.lens }}
               </button>
             {% endif %}

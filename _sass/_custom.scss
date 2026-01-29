@@ -317,10 +317,11 @@ html[data-theme="dark"] .btn:hover {
 
 /* Gear Section - Clean List */
 .gear-section {
-  display: flex;
-  justify-content: flex-start;
-  gap: 4rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 220px 1fr; /* Body | Lenses */
+  column-gap: 4rem;
+  row-gap: 1.5rem;
+  align-items: start;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -411,6 +412,27 @@ html[data-theme="dark"] .btn:hover {
 
 .filter-clear:hover {
   color: var(--global-text-color);
+}
+
+/* Hidden-by-default “no results” banner (JS toggles .visible) */
+.no-results {
+  display: none;
+  text-align: center;
+  padding: 2rem 1.25rem;
+  color: var(--global-text-color-light);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.015);
+  max-width: 600px;
+  margin: 1.5rem auto 0 auto;
+}
+
+html[data-theme="dark"] .no-results {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.no-results.visible {
+  display: block;
 }
 
 /* Photo Feed - Refined Card Style */
@@ -659,6 +681,11 @@ html[data-theme="dark"] .meta-tag:hover {
   gap: 2px;
 }
 
+/* Don’t show grid-only overlay in feed view */
+.photo-feed:not(.grid-view) .grid-overlay {
+  display: none;
+}
+
 .photo-feed.grid-view .photo-post {
   border: none;
   border-radius: 0;
@@ -667,11 +694,78 @@ html[data-theme="dark"] .meta-tag:hover {
   aspect-ratio: 1;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
 }
 
 .photo-feed.grid-view .photo-post:hover {
   box-shadow: none;
   opacity: 0.9;
+}
+
+/* Disable pseudo overlays (we use a real element overlay) */
+.photo-feed.grid-view .photo-post::before {
+  content: none;
+}
+
+.photo-feed.grid-view .photo-post::after {
+  content: none;
+}
+
+/* Grid hover overlay (bottom, 2 lines): Title + (Location · Lens) */
+.photo-feed.grid-view .grid-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.7rem 0.6rem 0.55rem 0.6rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0.35) 60%,
+    transparent 100%
+  );
+  color: #ffffff !important;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 2;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Force overlay text to stay white even if theme styles apply */
+.photo-feed.grid-view .grid-overlay *,
+.photo-feed.grid-view .grid-overlay-title,
+.photo-feed.grid-view .grid-overlay-meta {
+  color: #ffffff !important;
+}
+
+.photo-feed.grid-view .photo-post:hover .grid-overlay {
+  opacity: 1;
+}
+
+.photo-feed.grid-view .grid-overlay-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.15;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.photo-feed.grid-view .grid-overlay-meta {
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.15;
+  opacity: 0.9;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .photo-feed.grid-view .post-header-feed,
@@ -718,9 +812,9 @@ html[data-theme="dark"] .meta-tag:hover {
   }
   
   .gear-section {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: flex-start;
+    grid-template-columns: 1fr; /* stack on small screens */
+    column-gap: 0;
+    row-gap: 1.25rem;
   }
   
   .lens-list {
