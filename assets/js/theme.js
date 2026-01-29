@@ -4,11 +4,17 @@
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
   if (themeSetting == "system") {
-    setThemeSetting("light");
+    // If system, switch to the opposite of the current computed theme
+    let computedTheme = determineComputedTheme();
+    if (computedTheme == "dark") {
+      setThemeSetting("light");
+    } else {
+      setThemeSetting("dark");
+    }
   } else if (themeSetting == "light") {
     setThemeSetting("dark");
   } else {
-    setThemeSetting("system");
+    setThemeSetting("light");
   }
 };
 

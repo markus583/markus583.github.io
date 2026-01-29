@@ -4,6 +4,7 @@ permalink: /people/
 title: people
 nav: false
 nav_order: 9
+sitemap: false
 
 profiles:
   # if you want to include more than one profile, just replicate the following block

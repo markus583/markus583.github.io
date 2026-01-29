@@ -1,0 +1,136 @@
+<div class="photo-feed grid-view">
+  {% if site.photography != blank %}
+    {% assign photos = site.photography | sort: 'date' | reverse %}
+    {% for photo in photos %}
+      <div class="photo-post" id="post-{{ forloop.index }}" data-country="{{ photo.country }}" data-lenses="{% if photo.lenses %}{{ photo.lenses | join: ',' }}{% else %}{{ photo.lens }}{% endif %}" data-title="{{ photo.title }}" onclick="openPost(this)">
+        <div class="post-header-feed">
+          <span class="post-date">{{ photo.date | date: '%b %Y' }}</span>
+          {% if photo.location %}
+            <span class="post-location">{{ photo.location }}</span>
+          {% endif %}
+        </div>
+        <div class="post-image-container">
+          {% if photo.images %}
+            {% if photo.images.size > 1 %}
+              <div class="post-carousel" data-carousel data-loaded="false">
+                <div class="carousel-track">
+                  {% for img in photo.images %}
+                    <div class="carousel-slide">
+                      {% if forloop.first %}
+                        <img src="{{ img | prepend: '/assets/' | relative_url }}" alt="{{ photo.title }}" loading="lazy">
+                      {% else %}
+                        <img data-src="{{ img | prepend: '/assets/' | relative_url }}" alt="{{ photo.title }}" class="lazy-carousel">
+                      {% endif %}
+                    </div>
+                  {% endfor %}
+                </div>
+                <button class="carousel-nav prev" onclick="moveCarousel(this, -1)">‹</button>
+                <button class="carousel-nav next" onclick="moveCarousel(this, 1)">›</button>
+                <div class="carousel-dots">
+                  {% for img in photo.images %}
+                    <span class="carousel-dot{% if forloop.first %} active{% endif %}"></span>
+                  {% endfor %}
+                </div>
+              </div>
+            {% else %}
+              <img src="{{ photo.images[0] | prepend: '/assets/' | relative_url }}" alt="{{ photo.title }}" loading="lazy">
+            {% endif %}
+          {% elsif photo.image %}
+            <img src="{{ photo.image | prepend: '/assets/' | relative_url }}" alt="{{ photo.title }}" loading="lazy">
+          {% endif %}
+        </div>
+        {% if photo.title or photo.content != blank %}
+          <div class="post-caption">
+            {% if photo.title %}
+              <div class="caption-title">{{ photo.title }}</div>
+            {% endif %}
+            {% if photo.content != blank %}
+              <div class="caption-text">{{ photo.content | strip_html | strip }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
+        {% if photo.country or photo.lens %}
+          <div class="post-meta">
+            {% if photo.country %}
+              <button class="meta-tag country" onclick="filterPhotos('country', '{{ photo.country }}')">
+                <span class="fi fi-{{ site.data.countries[photo.country].code }}"></span> {{ photo.country }}
+              </button>
+            {% endif %}
+            {% if photo.lenses %}
+              {% for lens in photo.lenses %}
+                <button class="meta-tag lens" onclick="filterPhotos('lens', '{{ lens }}')">
+                  🔭 {{ lens }}
+                </button>
+              {% endfor %}
+            {% elsif photo.lens %}
+              <button class="meta-tag lens" onclick="filterPhotos('lens', '{{ photo.lens }}')">
+                🔭 {{ photo.lens }}
+              </button>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <div class="feed-placeholder">
+      <div class="feed-placeholder-icon">📷</div>
+      <p>Photos coming soon</p>
+    </div>
+  {% endif %}
+</div>
+
+<script>
+// Load carousel images only when user interacts
+function loadCarouselImages(carousel) {
+  if (carousel.dataset.loaded === 'true') return;
+  
+  const lazyImages = carousel.querySelectorAll('img.lazy-carousel');
+  lazyImages.forEach(img => {
+    if (img.dataset.src) {
+      img.src = img.dataset.src;
+      img.removeAttribute('data-src');
+      img.classList.remove('lazy-carousel');
+    }
+  });
+  carousel.dataset.loaded = 'true';
+}
+
+function moveCarousel(btn, direction) {
+  const carousel = btn.closest('.post-carousel');
+  
+  // Load all images when user starts navigating
+  loadCarouselImages(carousel);
+  
+  const track = carousel.querySelector('.carousel-track');
+  const slides = track.querySelectorAll('.carousel-slide');
+  const dots = carousel.querySelectorAll('.carousel-dot');
+  const totalSlides = slides.length;
+  
+  let currentIndex = parseInt(track.dataset.index || 0);
+  currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+  track.dataset.index = currentIndex;
+  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentIndex);
+  });
+}
+
+// Preload carousel images when post comes into view
+if ('IntersectionObserver' in window) {
+  const carouselObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const carousel = entry.target;
+        // Delay loading slightly to prioritize visible content
+        setTimeout(() => loadCarouselImages(carousel), 100);
+        carouselObserver.unobserve(carousel);
+      }
+    });
+  }, { rootMargin: '200px' });
+  
+  document.querySelectorAll('.post-carousel').forEach(carousel => {
+    carouselObserver.observe(carousel);
+  });
+}
+</script>

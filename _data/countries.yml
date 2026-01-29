@@ -1,0 +1,392 @@
+Japan:
+  code: jp
+Taiwan:
+  code: tw
+Austria:
+  code: at
+USA:
+  code: us
+Germany:
+  code: de
+France:
+  code: fr
+Italy:
+  code: it
+Spain:
+  code: es
+UK:
+  code: gb
+China:
+  code: cn
+South Korea:
+  code: kr
+Thailand:
+  code: th
+Vietnam:
+  code: vn
+Australia:
+  code: au
+Canada:
+  code: ca
+Switzerland:
+  code: ch
+Singapore:
+  code: sg
+Malaysia:
+  code: my
+Indonesia:
+  code: id
+Philippines:
+  code: ph
+Netherlands:
+  code: nl
+Belgium:
+  code: be
+Sweden:
+  code: se
+Norway:
+  code: no
+Denmark:
+  code: dk
+Finland:
+  code: fi
+Poland:
+  code: pl
+Czech Republic:
+  code: cz
+Hungary:
+  code: hu
+Portugal:
+  code: pt
+Greece:
+  code: gr
+Turkey:
+  code: tr
+India:
+  code: in
+Brazil:
+  code: br
+Argentina:
+  code: ar
+Chile:
+  code: cl
+Mexico:
+  code: mx
+New Zealand:
+  code: nz
+Russia:
+  code: ru
+South Africa:
+  code: za
+Egypt:
+  code: eg
+Morocco:
+  code: ma
+Kenya:
+  code: ke
+Israel:
+  code: il
+UAE:
+  code: ae
+Saudi Arabia:
+  code: sa
+Iran:
+  code: ir
+Pakistan:
+  code: pk
+Bangladesh:
+  code: bd
+Sri Lanka:
+  code: lk
+Nepal:
+  code: np
+Bhutan:
+  code: bt
+Myanmar:
+  code: mm
+Cambodia:
+  code: kh
+Laos:
+  code: la
+Mongolia:
+  code: mn
+Hong Kong:
+  code: hk
+Macau:
+  code: mo
+Ukraine:
+  code: ua
+Ireland:
+  code: ie
+Iceland:
+  code: is
+Estonia:
+  code: ee
+Latvia:
+  code: lv
+Lithuania:
+  code: lt
+Romania:
+  code: ro
+Bulgaria:
+  code: bg
+Croatia:
+  code: hr
+Serbia:
+  code: rs
+Slovenia:
+  code: si
+Slovakia:
+  code: sk
+Belarus:
+  code: by
+Moldova:
+  code: md
+Georgia:
+  code: ge
+Armenia:
+  code: am
+Azerbaijan:
+  code: az
+Kazakhstan:
+  code: kz
+Uzbekistan:
+  code: uz
+Turkmenistan:
+  code: tm
+Kyrgyzstan:
+  code: kg
+Tajikistan:
+  code: tj
+Afghanistan:
+  code: af
+Peru:
+  code: pe
+Colombia:
+  code: co
+Venezuela:
+  code: ve
+Ecuador:
+  code: ec
+Bolivia:
+  code: bo
+Paraguay:
+  code: py
+Uruguay:
+  code: uy
+Cuba:
+  code: cu
+Jamaica:
+  code: jm
+Dominican Republic:
+  code: do
+Haiti:
+  code: ht
+Bahamas:
+  code: bs
+Barbados:
+  code: bb
+Trinidad and Tobago:
+  code: tt
+Panama:
+  code: pa
+Costa Rica:
+  code: cr
+Nicaragua:
+  code: ni
+Honduras:
+  code: hn
+El Salvador:
+  code: sv
+Guatemala:
+  code: gt
+Belize:
+  code: bz
+Luxembourg:
+  code: lu
+Monaco:
+  code: mc
+Liechtenstein:
+  code: li
+Vatican City:
+  code: va
+San Marino:
+  code: sm
+Malta:
+  code: mt
+Cyprus:
+  code: cy
+Albania:
+  code: al
+North Macedonia:
+  code: mk
+Bosnia and Herzegovina:
+  code: ba
+Montenegro:
+  code: me
+Kosovo:
+  code: xk
+Andorra:
+  code: ad
+Algeria:
+  code: dz
+Tunisia:
+  code: tn
+Libya:
+  code: ly
+Sudan:
+  code: sd
+Ethiopia:
+  code: et
+Tanzania:
+  code: tz
+Uganda:
+  code: ug
+Rwanda:
+  code: rw
+Burundi:
+  code: bi
+Zambia:
+  code: zm
+Zimbabwe:
+  code: zw
+Botswana:
+  code: bw
+Namibia:
+  code: na
+Mozambique:
+  code: mz
+Madagascar:
+  code: mg
+Mauritius:
+  code: mu
+Seychelles:
+  code: sc
+Maldives:
+  code: mv
+Fiji:
+  code: fj
+Papua New Guinea:
+  code: pg
+Solomon Islands:
+  code: sb
+Vanuatu:
+  code: vu
+Samoa:
+  code: ws
+Tonga:
+  code: to
+Tuvalu:
+  code: tv
+Kiribati:
+  code: ki
+Marshall Islands:
+  code: mh
+Micronesia:
+  code: fm
+Palau:
+  code: pw
+Nauru:
+  code: nr
+Syria:
+  code: sy
+Lebanon:
+  code: lb
+Jordan:
+  code: jo
+Iraq:
+  code: iq
+Kuwait:
+  code: kw
+Bahrain:
+  code: bh
+Qatar:
+  code: qa
+Oman:
+  code: om
+Yemen:
+  code: ye
+North Korea:
+  code: kp
+Timor-Leste:
+  code: tl
+Brunei:
+  code: bn
+Somalia:
+  code: so
+Djibouti:
+  code: dj
+Eritrea:
+  code: er
+South Sudan:
+  code: ss
+Central African Republic:
+  code: cf
+Chad:
+  code: td
+Niger:
+  code: ne
+Mali:
+  code: ml
+Mauritania:
+  code: mr
+Senegal:
+  code: sn
+Gambia:
+  code: gm
+Guinea:
+  code: gn
+Guinea-Bissau:
+  code: gw
+Sierra Leone:
+  code: sl
+Liberia:
+  code: lr
+Ivory Coast:
+  code: ci
+Ghana:
+  code: gh
+Togo:
+  code: tg
+Benin:
+  code: bj
+Nigeria:
+  code: ng
+Cameroon:
+  code: cm
+Gabon:
+  code: ga
+Equatorial Guinea:
+  code: gq
+Congo:
+  code: cg
+DR Congo:
+  code: cd
+Angola:
+  code: ao
+Comoros:
+  code: km
+Lesotho:
+  code: ls
+Eswatini:
+  code: sz
+Cabo Verde:
+  code: cv
+Sao Tome and Principe:
+  code: st
+Suriname:
+  code: sr
+Guyana:
+  code: gy
+Dominica:
+  code: dm
+Saint Lucia:
+  code: lc
+Saint Vincent and the Grenadines:
+  code: vc
+Grenada:
+  code: gd
+Antigua and Barbuda:
+  code: ag
+Saint Kitts and Nevis:
+  code: kn

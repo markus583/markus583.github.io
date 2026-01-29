@@ -11,30 +11,23 @@ description:
 <style>
 .cv-download-btn {
   display: inline-block;
-  background: linear-gradient(135deg, #2563a8 0%, #1e4d84 100%);
-  color: white;
-  padding: 12px 24px;
+  background-color: var(--global-theme-color) !important;
+  color: #ffffff !important;
+  padding: 10px 20px;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(37, 99, 168, 0.2);
-  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 1px solid var(--global-theme-color) !important;
+  transition: all 0.2s ease;
+  box-shadow: none !important;
 }
 
 .cv-download-btn:hover {
-  background: linear-gradient(135deg, #1e4d84 0%, #164072 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(37, 99, 168, 0.3);
-  color: white;
-}
-
-html[data-theme="dark"] .cv-download-btn {
-  background: linear-gradient(135deg, #4a90d9 0%, #2563a8 100%);
-}
-
-html[data-theme="dark"] .cv-download-btn:hover {
-  background: linear-gradient(135deg, #6bb0ff 0%, #4a90d9 100%);
+  background-color: transparent !important;
+  color: var(--global-theme-color) !important;
+  text-decoration: none !important;
+  transform: none !important;
+  box-shadow: none !important;
 }
 </style>
 

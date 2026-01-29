@@ -147,6 +147,8 @@ collections:
     defaults:
       layout: post
     output: true
+  photography:
+    output: false
   projects:
     output: true
 

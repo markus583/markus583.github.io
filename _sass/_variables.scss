@@ -19,7 +19,7 @@ $green-color-dark: #009f06 !default;
 $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
 // Custom theme color - sophisticated teal/slate blue
-$purple-color: #2563a8 !default;  // Changed from magenta to deep blue
+$purple-color: rgb(37, 76, 145) !default;  // Lightened version of User choice (approx 20% brighter)
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;

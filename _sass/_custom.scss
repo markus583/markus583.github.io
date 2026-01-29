@@ -1,0 +1,301 @@
+/* Custom Styles for a clean, academic, and robust aesthetic */
+
+/* 1. Typography & Readability (The "Paper" Feel) */
+body {
+  /* Use system fonts + high quality serifs for a "printed" feel */
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Serif for long-form text (About me, blog posts) to emphasize NLP/Language background */
+.post article > p, 
+.post-description,
+.caption-text {
+  /* Reverted to system sans-serif for a cleaner, modern academic look */
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.05rem; /* Slightly adjusted for sans-serif readability */
+  line-height: 1.65;
+  color: var(--global-text-color);
+}
+
+/* Headers: Clean, bold, architectural */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em; /* Tight tracking for modern Swiss look */
+  color: var(--global-text-color);
+  margin-top: 2rem;
+}
+
+/* 2. Profile Section (Robust & Modular) */
+.profile {
+  margin-bottom: 2rem;
+  /* Ensure content (image + icons) is centered within the sidebar block */
+  text-align: center;
+}
+
+/* Fix mobile alignment issues */
+@media (max-width: 575px) {
+  .profile {
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+}
+
+.profile img {
+  /* Remove the "halo" gradient */
+  box-shadow: none !important; 
+  /* Simple, technical border */
+  border: 1px solid var(--global-divider-color);
+  padding: 4px; /* Frame effect */
+  background: var(--global-bg-color);
+  max-width: 200px;
+  /* Center the image itself if the container is wider */
+  margin: 0 auto;
+  /* Keep it circular or go slightly rounded square for more "engineering" feel? 
+     Circle is standard for people, let's keep it but clean. */
+  border-radius: 50%; 
+  transition: filter 0.3s ease;
+}
+
+.profile img:hover {
+  /* Subtle interaction: Grayscale to Color or slightly brighter */
+  transform: none; /* Stop the "jump" */
+  border-color: var(--global-theme-color);
+}
+
+/* Profile Contact Icons (New Location) */
+.profile .more-info .contact-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.4rem; /* Slightly smaller to fit in sidebar */
+}
+
+.profile .more-info .contact-icons a {
+  color: var(--global-theme-color); 
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  border-bottom: none !important;
+}
+
+.profile .more-info .contact-icons a:hover {
+  color: var(--global-theme-color);
+  opacity: 1;
+  transform: translateY(-2px);
+  background: none !important;
+}
+
+/* 3. Links & Interactions (Hypertext style over App style) */
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.post article a:not(.btn):not(.badge):not(.nav-link) {
+  /* Distinctive link style: solid color, underline */
+  color: var(--global-theme-color);
+  text-decoration: underline;
+  text-decoration-color: rgba(37, 99, 168, 0.3);
+  border-bottom: none; /* Override the previous theme's border-bottom style */
+  background: none;
+  -webkit-text-fill-color: initial; /* Reset any gradient text */
+}
+
+.post article a:not(.btn):not(.badge):not(.nav-link):hover {
+  color: var(--global-theme-color);
+  text-decoration-color: var(--global-theme-color);
+  background-color: rgba(37, 99, 168, 0.05); /* Subtle highlight block on hover */
+  border-radius: 2px;
+}
+
+/* 4. Layout Elements (Modular/Blocky) */
+
+/* News & Tables: Clean lines, no soft shadows */
+.news tr {
+  background: none !important; /* Remove gradient backgrounds */
+  border-bottom: 1px solid var(--global-divider-color);
+  transition: all 0.2s ease;
+  /* Ensure no borders bleed through */
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 12px; /* Softer corners on hover background */
+}
+
+.news tr:hover {
+  background-color: var(--global-hover-bg-color, rgba(0,0,0,0.02)) !important;
+  transform: translateX(3px); /* Consistent right movement */
+  box-shadow: none !important; /* No shadow */
+  border-left: none !important; 
+}
+
+/* Specific Dark Mode Hover Adjustments */
+html[data-theme="dark"] .news tr:hover,
+html[data-theme="dark"] .publications ol.bibliography > li:hover,
+html[data-theme="dark"] .opensource-card:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important; /* Visible white overlay on dark bg */
+}
+
+/* Prevent scrollbars from appearing due to hover transform */
+.news .table-responsive {
+  overflow: visible !important;
+}
+
+.news td {
+  border: none;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.news th {
+  /* Normalize the year styling */
+  font-weight: 600;
+  color: var(--global-text-color-light); /* Neutral academic grey */
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+/* Publications: clear hierarchy, no cards */
+.publications ol.bibliography > li {
+  background: none;
+  border: none;
+  border-left: 3px solid transparent; /* Marker for hover */
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.2s ease;
+}
+
+.publications ol.bibliography > li:hover {
+  transform: translateX(3px); /* Consistent right movement */
+  box-shadow: none;
+  border-left-color: transparent; /* Remove left colored bar */
+  /* Removed padding-left modification to prevent jumpiness */
+  /* Remove gradient, just use subtle background */
+  background: var(--global-hover-bg-color, rgba(0,0,0,0.02)); 
+}
+
+/* Year headers in publications */
+.publications h2.bibliography {
+  color: var(--global-theme-color); /* Solid brand color (Blue) */
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* Strong structural divider */
+  border-bottom: 2px solid var(--global-divider-color); 
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  letter-spacing: -0.02em;
+}
+
+/* Remove the colorful bar */
+.publications h2.bibliography::before {
+  content: none;
+  display: none;
+}
+
+/* Buttons: Outline style (Technical) */
+.btn {
+  background: transparent;
+  border: 1px solid var(--global-divider-color);
+  color: var(--global-text-color);
+  box-shadow: none;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.4rem 1rem;
+}
+
+.btn:hover {
+  border-color: var(--global-text-color);
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+  transform: none;
+}
+
+/* Open Source Section (Aligned with News/Publications) */
+.opensource-card {
+  padding: 1rem 0;
+  border: none;
+  /* Add separator line to match News/Publications rhythm */
+  border-bottom: 1px solid var(--global-divider-color); 
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+  position: relative;
+  background: none;
+  border-radius: 12px; /* Soft corners for hover */
+}
+
+.opensource-card:hover {
+  /* Match the interaction of News/Publications */
+  background: var(--global-hover-bg-color, rgba(0,0,0,0.02));
+  transform: translateX(3px);
+  /* Removed padding-left modification to prevent jumpiness */
+}
+
+.opensource-header {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.opensource-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+/* Ensure link hover doesn't double-trigger styles */
+.opensource-link:hover {
+  text-decoration: underline;
+}
+
+.opensource-desc {
+  color: var(--global-text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.opensource-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+.opensource-badge {
+  /* Remove pill background to match "clean/flat" look */
+  background: none; 
+  padding: 0;
+  color: var(--global-text-color-light);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+html[data-theme="dark"] .opensource-badge {
+  background: none;
+}
+
+/* 5. Dark Mode Adjustments */
+html[data-theme="dark"] .profile img {
+  border-color: #444;
+}
+html[data-theme="dark"] .btn:hover {
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+}
