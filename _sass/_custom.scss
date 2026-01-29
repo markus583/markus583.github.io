@@ -413,7 +413,7 @@ html[data-theme="dark"] .btn:hover {
   color: var(--global-text-color);
 }
 
-/* Photo Feed - Instagram Style but Cleaner */
+/* Photo Feed - Refined Card Style */
 .photo-feed {
   max-width: 600px;
   margin: 0 auto;
@@ -421,12 +421,13 @@ html[data-theme="dark"] .btn:hover {
 
 .photo-post {
   background: var(--global-bg-color);
-  /* Minimal border, no shadow */
   border: 1px solid var(--global-divider-color);
-  border-radius: 6px; 
-  margin-bottom: 2rem;
+  border-radius: 8px; /* Slightly softer than 6px */
+  margin-bottom: 3rem; /* More breathing room */
   overflow: hidden;
-  transition: border-color 0.2s ease;
+  transition: all 0.2s ease;
+  /* Add a subtle, structured shadow for depth */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .photo-post.hidden {
@@ -435,27 +436,33 @@ html[data-theme="dark"] .btn:hover {
 
 .photo-post:hover {
   border-color: var(--global-text-color-light);
-  box-shadow: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* Lift effect */
 }
 
 /* Post Header */
 .post-header-feed {
-  padding: 12px 16px;
+  padding: 14px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--global-divider-color);
+  background: rgba(0, 0, 0, 0.015); /* Very subtle contrast header */
+}
+
+html[data-theme="dark"] .post-header-feed {
+  background: rgba(255, 255, 255, 0.015);
 }
 
 .post-date {
   font-size: 0.85rem;
-  color: var(--global-text-color-light);
-  font-weight: 500;
+  color: var(--global-text-color);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .post-location {
   font-size: 0.85rem;
-  color: var(--global-theme-color);
+  color: var(--global-text-color-light); /* Neutral location */
   display: flex;
   align-items: center;
   gap: 4px;
@@ -464,8 +471,8 @@ html[data-theme="dark"] .btn:hover {
 .post-location::before {
   content: '📍';
   font-size: 0.9em;
-  filter: grayscale(100%); /* Desaturate emoji slightly */
-  opacity: 0.7;
+  filter: grayscale(100%); 
+  opacity: 0.5;
 }
 
 /* Images */
@@ -512,15 +519,15 @@ html[data-theme="dark"] .btn:hover {
   width: auto;
 }
 
-/* Clean Carousel Nav */
+/* Carousel Nav - Clean & Visible */
 .carousel-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 32px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid var(--global-divider-color);
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -529,8 +536,9 @@ html[data-theme="dark"] .btn:hover {
   font-size: 1.2rem;
   color: #333;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: all 0.2s ease;
   z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .post-carousel:hover .carousel-nav {
@@ -540,79 +548,93 @@ html[data-theme="dark"] .btn:hover {
 .carousel-nav:hover {
   background: #ffffff;
   color: #000;
+  transform: translateY(-50%) scale(1.05);
 }
 
-.carousel-nav.prev { left: 12px; }
-.carousel-nav.next { right: 12px; }
+.carousel-nav.prev { left: 16px; }
+.carousel-nav.next { right: 16px; }
 
 .carousel-dots {
   position: absolute;
-  bottom: 12px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 6px;
+  background: rgba(0,0,0,0.3);
+  padding: 6px 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
 }
 
 .carousel-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.6);
   transition: background 0.2s ease;
 }
 
 .carousel-dot.active {
   background: #ffffff;
+  transform: scale(1.2);
 }
 
 /* Captions & Meta */
 .post-caption {
-  padding: 16px;
+  padding: 16px 20px;
   border-top: 1px solid var(--global-divider-color);
 }
 
 .caption-title {
-  font-weight: 600;
-  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 1rem;
   color: var(--global-text-color);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
 }
 
 .caption-text {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--global-text-color);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .post-meta {
-  padding: 0 16px 14px 16px;
+  padding: 0 20px 18px 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-/* Meta Tags - Outline style instead of colored pills */
+/* Meta Tags - Technical "Chip" Style */
 .meta-tag {
   font-size: 0.75rem;
-  padding: 3px 8px;
-  border-radius: 4px;
+  padding: 4px 10px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
   border: 1px solid var(--global-divider-color);
-  background: transparent;
+  background: rgba(0,0,0,0.02); /* Slight fill */
   color: var(--global-text-color-light);
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
 }
 
 .meta-tag:hover {
   border-color: var(--global-theme-color);
   color: var(--global-theme-color);
-  background: transparent;
+  background: rgba(37, 99, 168, 0.05);
+  transform: translateY(-1px);
 }
 
-/* Specific colors for types can be subtle text color changes if needed, 
-   but keeping them uniform is more "robust/academic" */
+html[data-theme="dark"] .meta-tag {
+  background: rgba(255,255,255,0.05);
+}
+
+html[data-theme="dark"] .meta-tag:hover {
+  background: rgba(255,255,255,0.1);
+}
 
 /* View Toggle - Centered */
 .view-toggle {
