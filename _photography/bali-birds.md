@@ -2,7 +2,7 @@
 date: 2025-08-10
 location: Bali
 country: Taiwan
-lens: Minolta 75-300mm f/3.5-3.5 new
+lens: Minolta 75-300mm f/3.5-3.5
 title: Bali Birds
 images:
   - photography/bali_birds/DSC03421-4.jpg
