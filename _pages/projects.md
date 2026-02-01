@@ -6,6 +6,7 @@ description: Research projects and open-source contributions in NLP and AI.
 nav: false
 nav_order: 3
 sitemap: false
+noindex: true
 display_categories: [research]
 horizontal: false
 ---
