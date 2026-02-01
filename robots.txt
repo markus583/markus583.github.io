@@ -1,4 +1,7 @@
 User-agent: *
-Disallow:
+Disallow: /teaching/
+Disallow: /projects/
+Disallow: /repositories/
+Disallow: /books/
 
 Sitemap: https://markusfrohmann.com/sitemap.xml
