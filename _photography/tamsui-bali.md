@@ -3,19 +3,19 @@ date: 2025-08-10
 location: Tamsui & Bali
 country: Taiwan
 lenses:
-  - <!-- wide lens name (~20mm shots) -->
-  - <!-- telephoto lens name (75-300mm shots) -->
+  - Minolta 20mm f/2.8
+  - Minolta 75-300mm f/3.5-4.5
 title: Tamsui & Bali
 images:
-  - photography/tamsui_bali/DSC03245.jpg
-  - photography/tamsui_bali/DSC03272.jpg
-  - photography/tamsui_bali/DSC03325.jpg
-  - photography/tamsui_bali/DSC03326.jpg
-  - photography/tamsui_bali/DSC03351.jpg
-  - photography/tamsui_bali/DSC03515.jpg
-  - photography/tamsui_bali/DSC03552.jpg
-  - photography/tamsui_bali/DSC03605.jpg
-  - photography/tamsui_bali/DSC03623.jpg
-  - photography/tamsui_bali/DSC03638.jpg
+  - photography/tamsui_bali/DSC03623-3.jpg
+  - photography/tamsui_bali/DSC03608-4.jpg
+  - photography/tamsui_bali/DSC03245-4.jpg
+  - photography/tamsui_bali/DSC03638-4.jpg
+  - photography/tamsui_bali/DSC03326-4.jpg
+  - photography/tamsui_bali/DSC03329-4.jpg
+  - photography/tamsui_bali/DSC03552-4.jpg
+  - photography/tamsui_bali/DSC03272-4.jpg
+  - photography/tamsui_bali/DSC03515-4.jpg
+  - photography/tamsui_bali/DSC03530-4.jpg
 ---
 <!-- Add your caption here -->

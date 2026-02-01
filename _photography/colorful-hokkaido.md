@@ -3,19 +3,19 @@ date: 2025-07-07
 location: Hokkaido
 country: Japan
 lenses:
-  - <!-- mid zoom lens name (26-75mm shots) -->
-  - <!-- telephoto lens name (100-300mm shots) -->
+  - Sony 16-50mm f/3.5-5.6
+  - Minolta 75-300mm f/4.5-5.6
 title: Colorful Hokkaido
 images:
-  - photography/Colorful Hokkaido/DSC01218_Export.jpg
-  - photography/Colorful Hokkaido/DSC01378_Export.jpg
+  - photography/Colorful Hokkaido/DSC01691_Export.jpg
   - photography/Colorful Hokkaido/DSC01436_Export.jpg
-  - photography/Colorful Hokkaido/DSC01486_Export.jpg
-  - photography/Colorful Hokkaido/DSC01571_Export.jpg
-  - photography/Colorful Hokkaido/DSC01601_Export.jpg
-  - photography/Colorful Hokkaido/DSC01617_Export.jpg
-  - photography/Colorful Hokkaido/DSC01640_Export.jpg
-  - photography/Colorful Hokkaido/DSC01686_Export.jpg
-  - photography/Colorful Hokkaido/DSC01705_Export.jpg
+  - photography/Colorful Hokkaido/DSC01491_Export.jpg
+  - photography/Colorful Hokkaido/DSC01588_Export.jpg
+  - photography/Colorful Hokkaido/DSC01613_Export.jpg
+  - photography/Colorful Hokkaido/DSC01618_Export.jpg
+  - photography/Colorful Hokkaido/DSC01704_Export.jpg
+  - photography/Colorful Hokkaido/DSC01585_Export.jpg
+  - photography/Colorful Hokkaido/DSC01604_Export.jpg
+  - photography/Colorful Hokkaido/DSC01659_Export.jpg
 ---
 <!-- Add your caption here -->

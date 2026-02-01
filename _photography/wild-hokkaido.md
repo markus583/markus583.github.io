@@ -2,9 +2,7 @@
 date: 2025-07-04
 location: Hokkaido
 country: Japan
-lenses:
-  - Sony 16-50mm f/3.5-5.6
-  - <!-- telephoto lens name -->
+lens: Sony 16-50mm f/3.5-5.6
 title: Wild Hokkaido
 images:
   - photography/Wild Hokkaido/1.jpg
