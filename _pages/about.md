@@ -33,7 +33,7 @@ show_name: false
 I am a Master's student in Artificial Intelligence at **Johannes Kepler University Linz**, advised by [Prof. Markus Schedl](http://www.mschedl.eu/).
 My research focuses on **composable, parameter-efficient** language models and multimodal systems. I'm especially interested in *modular architectures*, *personalised and robust behaviour*, and *applications* such as intelligent assistants and multilingual information access in long-tail languages and noisy, real-world settings.
 
-I have been fortunate to gain research experience at **ETH Zürich** (advised by [Mario Giulianelli](https://glnmario.github.io/) and [Ryan Cotterell](https://scholar.google.com/citations?user=DexOqtoAAAAJ&hl=en)) and **Deezer Research**, as well as industry experience at **Bosch** and **Leftshift One**.
+I have been fortunate to gain research experience at **ETH Zürich** (advised by [Mario Giulianelli](https://glnmario.github.io/) and [Ryan Cotterell](https://scholar.google.com/citations?user=DexOqtoAAAAJ&hl=en)) and **Deezer Research**, as well as industry experience at **Bosch** and **Leftshift One**. Starting April 2026, I will be an Applied AI Scientist Intern at **Thomson Reuters Labs** in Zug, Switzerland.
 
 Outside research, I enjoy photography and exploring music & language across cultures.
 
