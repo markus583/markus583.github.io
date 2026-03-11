@@ -45,6 +45,9 @@ ninja.data = [{
           section: "News",},{id: "news-️-served-as-volunteer-coordinator-at-emnlp-2025-in-suzhou-china-helping-ensure-a-smooth-conference-experience-for-all-attendees-my-chinese-came-in-quite-handy",
           title: '🙋‍♂️ Served as Volunteer Coordinator at EMNLP 2025 in Suzhou, China, helping ensure...',
           description: "",
+          section: "News",},{id: "news-️-joining-thomson-reuters-labs-in-zug-switzerland-as-an-applied-ai-scientist-intern-from-april-to-september-2026-between-finishing-my-msc-in-ai-at-jku-linz-and-starting-my-phd-later-this-year-this-is-a-great-chance-to-conduct-applied-ai-research-with-navid-rekabsaz",
+          title: '🏔️ Joining Thomson Reuters Labs in Zug, Switzerland, as an Applied AI Scientist...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
