@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🏔️ Joining **Thomson Reuters Labs** in Zug, Switzerland, as an *Applied AI Scientist Intern* from April to September 2026! Between finishing my MSc in AI at JKU Linz and starting my PhD later this year, this is a great chance to conduct applied AI research, supervised by [Navid Rekabsaz](https://navid-rekabsaz.github.io/).
+🏔️ Joining **Thomson Reuters Labs** in Zug, Switzerland, as an *Applied AI Scientist Intern* from April to September 2026! Between my MSc in AI at JKU Linz and starting my PhD later this year, this is a great chance to conduct applied AI research, supervised by [Navid Rekabsaz](https://navid-rekabsaz.github.io/).
