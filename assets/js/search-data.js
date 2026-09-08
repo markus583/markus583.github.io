@@ -51,8 +51,11 @@ ninja.data = [{
           section: "News",},{id: "news-completed-my-msc-in-artificial-intelligence-at-johannes-kepler-university-linz-supervised-by-prof-markus-schedl-very-grateful-to-markus-and-to-the-mentors-collaborators-and-friends-who-helped-me-get-here",
           title: '🎓 Completed my MSc in Artificial Intelligence at Johannes Kepler University Linz, supervised...',
           description: "",
-          section: "News",},{id: "news-moving-to-toronto-in-september-to-start-my-phd-in-computer-science-at-the-university-of-toronto-advised-by-prof-colin-raffel-i-ll-also-join-the-ellis-phd-program-with-prof-edoardo-ponti-as-my-ellis-co-advisor",
-          title: '🍁 Moving to Toronto in September to start my PhD in Computer Science...',
+          section: "News",},{id: "news-new-preprint-from-my-thomson-reuters-labs-internship-equal-ranking-quality-different-decisions-training-order-consistent-llm-scorers-we-show-that-llm-scorers-with-the-same-ranking-quality-can-still-make-different-decisions-and-propose-oc-sft-to-train-order-consistent-scorers-code-is-available-here",
+          title: '📄 New preprint from my Thomson Reuters Labs internship: Equal Ranking Quality, Different...',
+          description: "",
+          section: "News",},{id: "news-started-my-phd-in-computer-science-at-the-university-of-toronto-advised-by-prof-colin-raffel-i-ll-also-be-part-of-the-ellis-phd-program-with-prof-edoardo-ponti-as-my-ellis-co-advisor",
+          title: '🍁 Started my PhD in Computer Science at the University of Toronto, advised...',
           description: "",
           section: "News",},{
         id: 'social-email',
