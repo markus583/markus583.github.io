@@ -4,7 +4,7 @@
     - name: Full Name
       value: Markus Frohmann
     - name: Location
-      value: Graz, Austria
+      value: Toronto, Canada
     - name: Languages
       value: German (Native), English (Full Professional), French (Professional), Mandarin (Elementary)
     - name: Email
@@ -13,9 +13,15 @@
 - title: Education
   type: time_table
   contents:
+    - title: Ph.D. in Computer Science
+      institution: University of Toronto, Canada
+      year: Sep 2026 – Present
+      description:
+        - "Advisor: Prof. Colin Raffel"
+        - "ELLIS PhD Program (co-advisor: Prof. Edoardo Ponti)"
     - title: M.S. in Artificial Intelligence
       institution: Johannes Kepler University Linz, Austria
-      year: Oct 2023 – Apr 2026 (expected)
+      year: Oct 2023 – Apr 2026
       description:
         - "GPA: 1.2 (Austrian scale: 1.0-5.0, equivalent to ≈3.8/4.0)"
         - "Thesis: Robust AI-Generated Lyrics Detection (Advisor: Prof. Markus Schedl)"
@@ -30,6 +36,13 @@
 - title: Research Experience
   type: time_table
   contents:
+    - title: Applied AI Scientist Intern
+      institution: Thomson Reuters Labs, Zug, Switzerland
+      year: Apr 2026 – Sep 2026
+      description:
+        - "Supervisor: Dr. Navid Rekabsaz"
+        - "Conducted applied AI research on order-consistent LLM scorers"
+        - "Preprint: Equal Ranking Quality, Different Decisions (arXiv:2608.26762)"
     - title: Research Intern
       institution: Deezer Research, Paris, France
       year: Sep 2024 – Feb 2025
@@ -91,6 +104,11 @@
 - title: Publications
   type: time_table
   contents:
+    - title: "Equal Ranking Quality, Different Decisions: Training Order-Consistent LLM Scorers"
+      year: 2026
+      description:
+        - "arXiv preprint arXiv:2608.26762"
+        - "Co-authors: M. Alavi, E. Lingg, N. Rekabsaz"
     - title: "Double Entendre: Robust Audio-Based AI-Generated Lyrics Detection via Multi-View Fusion"
       year: 2025
       description:

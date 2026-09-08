@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Incoming CS PhD student @ U of T
+subtitle: CS PhD student @ U of T
 
 profile:
   align: right
@@ -30,11 +30,11 @@ opensource_libraries: true
 show_name: false
 ---
 
-I recently completed my MSc in Artificial Intelligence at **Johannes Kepler University Linz**, supervised by [Prof. Markus Schedl](http://www.mschedl.eu/). In September, I'll move to Toronto to start my PhD in Computer Science at the **University of Toronto**, advised by [Prof. Colin Raffel](https://www.colinraffel.com/). I'll also be part of the [ELLIS PhD Program](https://ellis.eu/phd-postdoc), with [Prof. Edoardo Ponti](https://ducdauge.github.io/) as my ELLIS co-advisor.
+I am a PhD student in Computer Science at the **University of Toronto**, advised by [Prof. Colin Raffel](https://www.colinraffel.com/). I am also part of the [ELLIS PhD Program](https://ellis.eu/phd-postdoc), with [Prof. Edoardo Ponti](https://ducdauge.github.io/) as my ELLIS co-advisor.
 
-My research focuses on **composable, parameter-efficient** language models and multimodal systems. I'm especially interested in *modular architectures*, *personalised and robust behaviour*, and *applications* such as intelligent assistants and multilingual information access in long-tail languages and noisy, real-world settings.
+I completed my MSc in Artificial Intelligence at **Johannes Kepler University Linz**, supervised by [Prof. Markus Schedl](http://www.mschedl.eu/). My research focuses on **composable, parameter-efficient** language models and multimodal systems. I'm especially interested in *modular architectures*, *personalised and robust behaviour*, and *applications* such as intelligent assistants and multilingual information access in long-tail languages and noisy, real-world settings.
 
-I have been fortunate to gain research experience at **ETH Zürich** (advised by [Mario Giulianelli](https://glnmario.github.io/) and [Ryan Cotterell](https://scholar.google.com/citations?user=DexOqtoAAAAJ&hl=en)) and **Deezer Research**, as well as industry experience at **Bosch** and **Leftshift One**. From April to September 2026, I am an Applied AI Scientist Intern at **Thomson Reuters Labs** in Zug, Switzerland — between my MSc and starting my PhD.
+I have been fortunate to gain research experience at **ETH Zürich** (advised by [Mario Giulianelli](https://glnmario.github.io/) and [Ryan Cotterell](https://scholar.google.com/citations?user=DexOqtoAAAAJ&hl=en)) and **Deezer Research**, as well as industry experience at **Bosch** and **Leftshift One**. From April to September 2026, I was an Applied AI Scientist Intern at **Thomson Reuters Labs** in Zug, Switzerland.
 
 Outside research, I enjoy photography and exploring music & language across cultures.
 
